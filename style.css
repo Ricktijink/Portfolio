@@ -1,0 +1,186 @@
+/* Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+   box-sizing: border-box;
+}
+
+body{
+
+}
+
+.clearfix{
+   clear: both;
+}
+
+/* General */
+
+.container{
+
+}
+
+:root {
+    --main-bg-color: coral;
+}
+
+/* Page - sidebar */
+
+.page-sidebar{
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 320px;
+   background-color: #fff;
+   z-index: 10;
+   border-right: 1px solid #ececec;
+}
+
+   .sidebar-logo{
+      width: 100%;
+      height: auto;
+      margin: 50px auto 100px auto;
+   }
+
+      .logo-icon{
+         width: 94px;
+         height: 94px;
+         margin: 0px auto;
+      }
+
+      .logo-text{
+         width: 122px;
+         margin: 10px auto;
+         height: auto;
+         font-size: 24px;
+         font-family: "Montserrat";
+      }
+
+   .sidebar-content{
+      width: 76%;
+      height: auto;
+      margin: 0px auto 0px auto;
+   }
+
+      .sidebar-content > p{
+         text-align: center;
+         line-height: 1.8;
+         color:#797979;
+         font-family: "Raleway";
+         font-size: 14px;
+      }
+
+      .sidebar-links{
+         width: 100%;
+         height: auto;
+         margin: 50px auto 0px auto;
+      }
+
+         .sidebar-links h3{
+            font-family: "Raleway";
+            text-align: center;
+            margin-bottom: 20px;
+         }
+
+         .sidebar-links li{
+            list-style: none;
+         }
+
+         .sidebar-links li a{
+            text-align: center;
+            height: 40px;
+            margin: 4px;
+            padding: 12px;
+            border-radius: 30px;
+            float: left;
+            font-family: "Raleway";
+            font-weight: 400;            
+            font-size: 12px;
+            color: #545661;
+            border: 1px solid #545661;
+            display:block;
+            text-decoration: none;
+         }
+         .sidebar-links li a:hover{
+            background-color: #2C9E82;
+            color: #FFFFFF;
+         }
+
+   .sidebar-footer{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+   }
+
+      .footer-social{
+         width: 224px;
+         height: 45px;
+         margin: 0px auto;
+      }
+
+         .soc-icon{
+            width: 44px;
+            height: 44px;
+            float: left;
+            margin: 0px 6px;
+         }
+
+      .footer-copy{
+         width: 100%;
+         padding: 20px 0px;
+         text-align: center;
+         font-family: "Raleway";
+         color: #8d8d8d;
+         font-size: 14px;
+      }
+
+      .footer-copy > span{
+         font-weight: 800;
+         font-weight: bold;
+      }
+
+/* Page - content */
+
+.page-content{
+
+}
+
+   .content-topbar{
+
+   }
+
+      .topbar-title{
+
+      }
+
+      .topbar-filter{
+
+      }
+
+   .content-masonry{
+
+   }
+
+   .hire-me{
+
+   }
