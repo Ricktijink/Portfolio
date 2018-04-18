@@ -179,6 +179,7 @@ body{
 		background-color: #FFFFFF;
 		position: fixed;
 		top:0;
+		z-index: 20;
       border-bottom: 1px solid #ececec;
    }
 
@@ -189,8 +190,20 @@ body{
          box-sizing: border-box;
       }
 
+		.topbar-title > span{
+			color: #bdbdbd;
+		}
+
+	.topbar-filter{
+		float: right;
+		width:300px;
+		height:200px;
+		background-color: red;
+	}
+
    .content-masonry{
-		margin-top: 120px;
+		padding-top: 90px;
+		background-color: #FAFAFA;
    }
 
    .hire-me{
@@ -198,22 +211,51 @@ body{
    }
 
 
-/*  */
+/* Posts visually shown as cards */
 .post{
 	width: 100%;
+	background: #fff;
+ 	border-radius: 2px;
+ 	margin-bottom: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+	-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+}
+
+.post a:hover .post-image-cover{
+	opacity: 0.8;
 }
 
 .post a{
 	width: 100%;
+	text-decoration: none;
+	color:#666666;
+}
+
+.post-title{
+	color: #292929;
+	font-family: "Raleway";
+	font-weight: bold;
+}
+
+.post-subtitle{
+	font-family: "Montserrat";
+	font-size: 14px;
+}
+
+.post-text{
+	padding: 20px 0px 18px 20px;
 }
 
 main{
 			width: 96%;
-			margin:30px auto;
+			margin:0px auto 0px;
+			padding: 30px 0px;
 
-			-moz-column-width: 200px;
-			-webkit-column-width: 200px;
-			column-width: 200px;
+			-moz-column-width: 180px;
+			-webkit-column-width: 180px;
+			column-width: 180px;
 
 			-moz-column-count: 5;
 			-webkit-column-count: 5;
@@ -228,19 +270,44 @@ main{
 			text-decoration: none;
 			color:#424242;
 			display: inline-block;
-			margin-bottom:20px;
 		}
 
-		/* main:hover a[title]:not(:hover){
-			opacity: .6;
-		} */
+.post-image{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
 
-.image{
+.post-image img{
 	width: 100%;
 	height: auto;
 }
 
-.image img{
+.post-image-cover{
 	width: 100%;
-	height: auto;
+	height: 100%;
+	background-color: #578a57;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+	text-align: center;
+	color:#FFFFFF;
+   padding-top: 30%;
+}
+
+.post-image-cover-title {
+	font-size: 30px;
+    border: 2px solid #FFFFFF;
+    padding: 10px 20px;
+    margin: 40px;
+}
+
+.post-image-cover-subtitle {
+	font-size: 20px;
+    padding: 10px 20px;
+    margin: 40px;
 }
