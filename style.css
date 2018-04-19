@@ -23,7 +23,7 @@ time, mark, audio, video {
 }
 
 body{
-
+	background-color: #FAFAFA;
 }
 
 .clearfix{
@@ -34,10 +34,6 @@ body{
 
 .container{
 
-}
-
-:root {
-    --main-bg-color: coral;
 }
 
 /* Page - sidebar */
@@ -203,7 +199,6 @@ body{
 
    .content-masonry{
 		padding-top: 90px;
-		background-color: #FAFAFA;
    }
 
    .hire-me{
@@ -217,10 +212,12 @@ body{
 	background: #fff;
  	border-radius: 2px;
  	margin-bottom: 20px;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+	/* box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1); */
 	-webkit-column-break-inside: avoid;
           page-break-inside: avoid;
                break-inside: avoid;
+	border: 1px solid rgba(0,0,0,0.07);
+	border-bottom: 2px solid rgba(0,0,0,0.07);
 }
 
 .post a:hover .post-image-cover{
@@ -310,4 +307,8 @@ main{
 	font-size: 20px;
     padding: 10px 20px;
     margin: 40px;
+}
+
+.active{
+	background-color: #ff0000;
 }
