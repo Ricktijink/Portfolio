@@ -1,44 +1,30 @@
 /* Resets */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
    box-sizing: border-box;
 }
 
-body{
-	background-color: #FAFAFA;
+body {
+   background-color: #FAFAFA;
 }
 
-.clearfix{
+.clearfix {
    clear: both;
 }
 
 /* General */
 
-.container{
-
-}
+.container {}
 
 /* Page - sidebar */
 
-.page-sidebar{
+.page-sidebar {
    position: fixed;
    top: 0;
    left: 0;
@@ -50,265 +36,343 @@ body{
    border-right: 1px solid #ececec;
 }
 
-   .sidebar-logo{
-      width: 100%;
-      height: auto;
-      margin: 50px auto 100px auto;
-   }
+.sidebar-logo {
+   width: 100%;
+   height: auto;
+   margin: 50px auto 100px auto;
+}
 
-      .logo-icon{
-         width: 94px;
-         height: 94px;
-         margin: 0px auto;
-      }
+.logo-icon {
+   width: 94px;
+   height: 94px;
+   margin: 0px auto;
+}
 
-      .logo-text{
-         width: 100%;
-         margin: 10px auto;
-         height: auto;
-         font-size: 24px;
-         font-family: "Montserrat";
-			text-align: center;
-      }
+.logo-text {
+   width: 100%;
+   margin: 10px auto;
+   height: auto;
+   font-size: 24px;
+   font-family: "Montserrat";
+   text-align: center;
+}
 
-		.logo-text > span{
-			font-size: 16px;
-			color: #cecece;
-			font-family: "Raleway";
-		}
+.logo-text>span {
+   font-size: 16px;
+   color: #cecece;
+   font-family: "Raleway";
+   display: block;
+}
 
-   .sidebar-content{
-      width: 76%;
-      height: auto;
-      margin: 0px auto 0px auto;
-   }
+.sidebar-content {
+   width: 76%;
+   height: auto;
+   margin: 0px auto 0px auto;
+}
 
-      .sidebar-content > p{
-         text-align: center;
-         line-height: 1.8;
-         color:#797979;
-         font-family: "Raleway";
-         font-size: 14px;
-      }
+.sidebar-content>p {
+   text-align: center;
+   line-height: 1.8;
+   color: #797979;
+   font-family: "Raleway";
+   font-size: 14px;
+}
 
-      .sidebar-links{
-         width: 100%;
-         height: auto;
-         margin: 70px auto 0px auto;
-      }
+.sidebar-links {
+   width: 100%;
+   height: auto;
+   margin: 70px auto 0px auto;
+}
 
-         .sidebar-links h3{
-            font-family: "Raleway";
-            text-align: center;
-            margin-bottom: 20px;
-         }
+.sidebar-links h3 {
+   font-family: "Raleway";
+   text-align: center;
+   margin-bottom: 20px;
+	font-weight: 600;
+}
+/*
+.sidebar-links li {
+   list-style: none;
+} */
 
-         .sidebar-links li{
-            list-style: none;
-         }
+.sidebar-links nav a {
+   text-align: center;
+   height: 40px;
+   margin: 4px;
+   padding: 12px;
+   font-family: "Montserrat";
+   font-size: 14px;
+	color:#797979;
+   display: block;
+   text-decoration: none;
+	font-weight: 400;
+}
 
-         .sidebar-links li a{
-            text-align: center;
-            height: 40px;
-            margin: 4px;
-            padding: 12px;
-            border-radius: 30px;
-            float: left;
-            font-family: "Raleway";
-            font-weight: 400;
-            font-size: 12px;
-            color: #545661;
-            border: 1px solid #545661;
-            display:block;
-            text-decoration: none;
-         }
-         .sidebar-links li a:hover{
-            background-color: #2C9E82;
-            color: #FFFFFF;
-         }
+.active-page{
+	color: #2c9e82!important;
+	text-decoration: underline!important;
+}
 
-   .sidebar-footer{
-      width: 100%;
-      height: auto;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-   }
+.sidebar-links nav a:hover {
+   color: #545661;
+}
 
-      .footer-social{
-         width: 224px;
-         height: 45px;
-         margin: 0px auto;
-      }
+.sidebar-footer {
+   width: 100%;
+   height: auto;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
 
-         .soc-icon{
-            width: 44px;
-            height: 44px;
-            float: left;
-            margin: 0px 6px;
-         }
+.footer-social {
+   width: 224px;
+   height: 45px;
+   margin: 0px auto;
+}
 
-      .footer-copy{
-         width: 100%;
-         padding: 20px 0px;
-         text-align: center;
-         font-family: "Raleway";
-         color: #8d8d8d;
-         font-size: 14px;
-      }
+.soc-icon {
+   width: 44px;
+   height: 44px;
+   float: left;
+   margin: 0px 6px;
+}
 
-      .footer-copy > span{
-         font-weight: 800;
-         font-weight: bold;
-      }
+.footer-copy {
+   width: 100%;
+   padding: 20px 0px;
+   text-align: center;
+   font-family: "Raleway";
+   color: #8d8d8d;
+   font-size: 14px;
+}
+
+.footer-copy>span {
+   font-weight: 800;
+   font-weight: bold;
+}
 
 /* Page - content */
 
-.page-content{
+.page-content {
    width: 100%;
    padding-left: 320px;
 }
 
-   .content-topbar{
-      width: 100%;
-      height: 90px;
-		background-color: #FFFFFF;
-		position: fixed;
-		top:0;
-		z-index: 20;
-      border-bottom: 1px solid #ececec;
-   }
+.content-topbar {
+   width: calc(100% - 320px);
+   height: 90px;
+   background-color: #FFFFFF;
+   position: fixed;
+   top: 0;
+   z-index: 20;
+   border-bottom: 1px solid #ececec;
+}
 
-      .topbar-title{
-         font-size: 36px;
-         font-family: "Raleway";
-         padding: 24px 0px 0px 30px;
-         box-sizing: border-box;
-      }
+.topbar-title {
+   font-size: 36px;
+   font-family: "Raleway";
+   padding: 24px 0px 0px 30px;
+   box-sizing: border-box;
+   width: 250px;
+   float: left;
+}
 
-		.topbar-title > span{
-			color: #bdbdbd;
-		}
+.topbar-title>span {
+   color: #bdbdbd;
+}
 
-	.topbar-filter{
-		float: right;
-		width:300px;
-		height:200px;
-		background-color: red;
-	}
+.content-masonry {
+   padding-top: 90px;
+}
 
-   .content-masonry{
-		padding-top: 90px;
-   }
+/* Filter */
 
-   .hire-me{
+.filter-menu {
+   display: none;
+   width: 100%;
+   border-bottom: 1px solid #ececec;
+   padding: 5px 0px 0px 30px;
+   height: 60px;
+}
 
-   }
+.filter-menu-button {
+   width: 44px;
+   height: 44px;
+   margin: 22px 30px 0px 0px;
+   float: right;
+   cursor: pointer;
+}
 
+.filter-menu ul {
+   width: 510px;
+   margin: 0px auto;
+}
+
+.filter-menu li {
+   list-style: none;
+}
+
+.filter-menu li a {
+   text-align: center;
+   height: 40px;
+   min-width: 60px;
+   margin: 4px;
+   padding: 12px;
+   border-radius: 30px;
+   float: left;
+   font-family: "Raleway";
+   font-weight: 400;
+   font-size: 12px;
+   color: #545661;
+   border: 1px solid #545661;
+   display: block;
+   text-decoration: none;
+}
+
+.filter-menu li a:hover {
+   background-color: #2C9E82;
+   color: #FFFFFF;
+}
 
 /* Posts visually shown as cards */
-.post{
-	width: 100%;
-	background: #fff;
- 	border-radius: 2px;
- 	margin-bottom: 20px;
-	/* box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1); */
-	-webkit-column-break-inside: avoid;
-          page-break-inside: avoid;
-               break-inside: avoid;
-	border: 1px solid rgba(0,0,0,0.07);
-	border-bottom: 2px solid rgba(0,0,0,0.07);
+
+.post {
+   width: 100%;
+   background: #fff;
+   border-radius: 2px;
+   margin-bottom: 20px;
+   /* box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1); */
+   -webkit-column-break-inside: avoid;
+   /* Chrome, Safari, Opera */
+   page-break-inside: avoid;
+   /* Firefox */
+   break-inside: avoid;
+   /* IE 10+ */
+   border: 1px solid rgba(0, 0, 0, 0.07);
+   border-bottom: 2px solid rgba(0, 0, 0, 0.07);
 }
 
-.post a:hover .post-image-cover{
-	opacity: 0.8;
+.post a:hover .post-image-cover {
+   opacity: 0.8;
 }
 
-.post a{
-	width: 100%;
-	text-decoration: none;
-	color:#666666;
+.post a:hover>.post-image>img {
+   transform: scale(1.1);
+   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.post-title{
-	color: #292929;
-	font-family: "Raleway";
-	font-weight: bold;
+.post a {
+   width: 100%;
+   text-decoration: none;
+   color: #666666;
 }
 
-.post-subtitle{
-	font-family: "Montserrat";
-	font-size: 14px;
+.post-title {
+   color: #292929;
+   font-family: "Raleway";
+   font-weight: bold;
 }
 
-.post-text{
-	padding: 20px 0px 18px 20px;
+.post-subtitle {
+   font-family: "Montserrat";
+   font-size: 14px;
 }
 
-main{
-			width: 96%;
-			margin:0px auto 0px;
-			padding: 30px 0px;
-
-			-moz-column-width: 180px;
-			-webkit-column-width: 180px;
-			column-width: 180px;
-
-			-moz-column-count: 5;
-			-webkit-column-count: 5;
-			column-count: 5;
-
-			-moz-column-gap: 20px;
-			-webkit-column-gap: 20px;
-			column-gap: 20px;
-		}
-
-		main a[title]{
-			text-decoration: none;
-			color:#424242;
-			display: inline-block;
-		}
-
-.post-image{
-	width: 100%;
-	height: auto;
-	position: relative;
+.post-text {
+   padding: 20px 0px 18px 20px;
 }
 
-.post-image img{
-	width: 100%;
-	height: auto;
+main {
+   width: 96%;
+   margin: 0px auto 0px;
+   padding: 30px 0px;
+   -moz-column-width: 180px;
+   -webkit-column-width: 180px;
+   column-width: 180px;
+   -moz-column-count: 5;
+   -webkit-column-count: 5;
+   column-count: 5;
+   -moz-column-gap: 20px;
+   -webkit-column-gap: 20px;
+   column-gap: 20px;
 }
 
-.post-image-cover{
-	width: 100%;
-	height: 100%;
-	background-color: #578a57;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	transition: opacity .3s ease-in-out;
-   -moz-transition: opacity .3s ease-in-out;
-   -webkit-transition: opacity .3s ease-in-out;
-	text-align: center;
-	color:#FFFFFF;
+main a[title] {
+   text-decoration: none;
+   color: #424242;
+   display: inline-block;
+}
+
+.post-image {
+   width: 100%;
+   height: auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.post-image img {
+   width: 100%;
+   height: auto;
+   transition: transform .2s;
+   /* Animation */
+}
+
+.post-image-cover {
+   width: 100%;
+   height: 100%;
+   background-color: #578a57;
+   position: absolute;
+   z-index: 10;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: opacity .2s ease-in-out;
+   -moz-transition: opacity .2s ease-in-out;
+   -webkit-transition: opacity .2s ease-in-out;
+   text-align: center;
+   color: #FFFFFF;
    padding-top: 30%;
 }
 
 .post-image-cover-title {
-	font-size: 30px;
-    border: 2px solid #FFFFFF;
-    padding: 10px 20px;
-    margin: 40px;
+   font-size: 30px;
+   border: 2px solid #FFFFFF;
+   padding: 10px 20px;
+   margin: 40px;
 }
 
 .post-image-cover-subtitle {
-	font-size: 20px;
-    padding: 10px 20px;
-    margin: 40px;
+   font-size: 20px;
+   padding: 10px 20px;
+   margin: 40px;
 }
 
-.active{
-	background-color: #ff0000;
+.active {
+   background-color: #ff0000 !important;
 }
+
+/* button */
+
+.button {
+   margin: 40px auto 0px;
+   width: 170px;
+   height: 60px;
+   border-radius: 2px;
+   padding-top: 16px;
+   font-size: 20px;
+   text-align: center;
+   font-family: "Montserrat";
+   background-color: #FFFFFF;
+   border: 3px solid #545661;
+   cursor: pointer;
+   box-shadow: inset 0 0 0 0 #578a57;
+   -webkit-transition: all ease 0.4s;
+   -moz-transition: all ease 0.4s;
+   transition: all ease 0.4s;
+}
+
+.button:hover {
+   /* background-color: #525661; */
+   box-shadow: inset 0 100px 0 0 #578a57;
+   color: #FFFFFF;
