@@ -5,13 +5,43 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <!-- Main stylesheet -->
-   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="Css/style.css">
    <!-- Google fonts -->
    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 
    <title>Rick Tijink - Portfolio</title>
 </head>
 <body>
+   <!-- Modal - businesscard (Temp location) -->
+   <div id="businesscard-modal" class="modal">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h3>Rick Tijink</h3>
+            <h4>Frontend Developer</h4>
+            <div class="modal-header-profile">
+               <img src="Images/businesscard-profile.png" alt="Profile">
+            </div>
+         </div>
+         <div class="modal-contentarea">
+            <span>E-Mail:</span>
+            <p><a href="mailto:ricktijink@hotmail.com">Ricktijink@hotmail.com</a></p>
+            <span>Telefoon:</span>
+            <p>06 429 22 597</p>
+            <span>Locatie:</span>
+            <p>Nederland, Tilburg</p>
+         </div>
+         <span class="close-modal-button" id="close-modal">&times;</span>
+      </div>
+   </div>
+   <!-- Modal (Temp location) -->
+   <div id="post-preview-modal" class="postpreview">
+      <div class="post-preview">
+         Hi, this is the post-preview modal.
+         <br>I clicked <span id="testtest"></span>
+         <br>
+         <span class="close-post-preview">close</span>
+      </div>
+   </div>
    <!-- Container for website -->
    <div class="container">
       <!-- Sidebar (Change div to sidebar?) -->
@@ -29,7 +59,7 @@
          <!-- Sidebar content -->
          <div class="sidebar-content">
             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolore, voluptates maiores voluptatibus sapiente adipisci perspiciatis natus qui libero cumque nulla facilis excepturi officia praesentium, tempora asperiores deleniti hic tenetur!
+               Hallo, mijn naam is Rick Tijink en ik ben een ICT & Media designer. Dat betekent dat ik me bezig houd met de grafische vormgeving van producten zoals websites, logos, posters en visitekaartjes. Tevens ontwikkel en beheer ik ICT-gerichte applicaties.
             </p>
             <div class="sidebar-links">
                <h3>Navigatie</h3>
@@ -56,7 +86,7 @@
                      <a href="mailto:ricktijink@hotmail.com"><img src="Images/Icons/mail.png" alt="Email icon"></a>
                   </div>
                   <!-- CV -->
-                  <div class="soc-icon">
+                  <div class="soc-icon" id="open-modal">
                      <a href="#"><img src="Images/Icons/about.png" alt="CV icon"></a>
                   </div>
             </div>
@@ -81,8 +111,9 @@
          <!-- Masonry for items -->
          <div class="content-masonry">
             <div class="filter-menu">
+               <span class="close-filter-button">Close<span id="small-x"> &times;</span></span>
                <ul>
-                  <li class="option" data-filter="all"><a href="#" class="active">All</a></li>
+                  <li class="option" data-filter="all"><a href="#" class="active-filter">All</a></li>
                   <li class="option" data-filter="html"><a href="#">HTML5</a></li>
                   <li class="option" data-filter="css"><a href="#">CSS3</a></li>
                   <li class="option" data-filter="php"><a href="#">PHP</a></li>
@@ -93,152 +124,185 @@
                </ul>
             </div>
             <main>
-               <div class="post filter html css">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover">
-                           <!-- <span class="post-image-cover-title">Post 1</span> <br>
-                           <span class="post-image-cover-subtitle">meer info</span> -->
+               <!-- Post -->
+               <div class="post filter html css" id="Post 1">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=post-1">
+                        <div class="post-image-cover open-post-preview">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
                         </div>
-                        <img src="Images/Projects/project1.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 1</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+                     </a>
+                     <img src="Images/Projects/project1.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 1</span>
+                     <span class="post-subtitle">View project</span>
+                  </div>
                </div>
-               <div class="post filter css">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project2.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 2</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter css" id="Post 2">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover open-post-preview">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project2.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 2</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter php">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project3.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 3</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter php" id="Post 3">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project3.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 3</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter html">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project4.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 4</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter html" id="Post 4">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project4.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 4</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter git">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project5.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 5</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter git" id="Post 5">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project5.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 5</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter js">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project6.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 6</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter js" id="Post 6">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project6.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 6</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter css">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project7.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 7</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter css" id="Post 7">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project7.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 7</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter sql">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project8.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 8</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter sql" id="Post 8">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project8.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 8</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter html">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project9.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 9</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter html" id="Post 9">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project9.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 9</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter html">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project3.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 10</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter html" id="Post 10">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project3.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 10</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter html">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project11.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 11</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter html" id="Post 11">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project11.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 11</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
-               <div class="post filter html">
-                  <a href="#">
-                     <div class="post-image">
-                        <div class="post-image-cover"></div>
-                        <img src="Images/Projects/project12.jpg" alt="First project">
-                     </div>
-                     <div class="post-text">
-                        <span class="post-title">Title 12</span><br/>
-                        <span class="post-subtitle">Subtitle here</span>
-                     </div>
-		            </a>
+               <!-- Post -->
+               <div class="post filter html" id="Post 12">
+                  <div class="post-image">
+                     <a href="portfolio.php?p=mctwee">
+                        <div class="post-image-cover">
+                           <span class="post-image-cover-title"><img src="Images/Icons/preview.png"></span>
+                        </div>
+                     </a>
+                     <img src="Images/Projects/project12.jpg" alt="First project">
+                  </div>
+                  <div class="post-text">
+                     <span class="post-title">Title 12</span>
+                     <span class="post-subtitle">Subtitle here</span>
+                  </div>
                </div>
                <div class="clearfix"></div>
 	         </main>
@@ -248,7 +312,9 @@
    </div>
    <!-- Jquery -->
    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <!-- Include js plugin -->
+   <script src="owl-carousel/owl.carousel.js"></script>
    <!-- Main code file -->
-   <script src="javascript.js"></script>
+   <script src="Js/javascript.js"></script>
 </body>
 </html>
