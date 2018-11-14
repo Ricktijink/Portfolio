@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <item>
+    <title>News item 1: Rick Tijink</title>
+    <link>http://www.ricktijink.me</link>
+    <description>This is a sample description to see if everything works. This is the first 2.</description>
+    <date>11-06-2015</date>
+    <image><img src="rssimage.jpg" alt="imgtest" height="150" width="250"/></image>
+  </item>
+  <item>
+    <title>News item 2</title>
+    <link>http://www.google.nl</link>
+    <description>This is a sample description to see if everything works. This is the first 3.</description>
+    <date>11-06-2015</date>
+  </item>
+  <item>
+    <title>News item 3</title>
+    <link>http://www.w3schools.com/xml</link>
+    <description>This is a sample description to see if everything works. This is the first 3.</description>
+    <date>11-06-2015</date>
+  </item>
+  <item>
+    <title>News item 4</title>
+    <link>http://www.w3schools.com/xml</link>
+    <description>This is a sample description to see if everything works. This is the first 3.</description>
+    <date>11-06-2015</date>
+  </item> 
+  <item>
+    <title>News item 5</title>
+    <link>http://www.w3schools.com/xml</link>
+    <description>This is a sample description to see if everything works. This is the first 3.</description>
+    <date>11-06-2015</date>
+  </item>  
+  <item>
+    <title>RSS Image</title>
+    <link>http://www.w3schools.com/rss</link>
+    <description>New RSS tutorial on W3Schools</description>
+    <date>11-06-2015</date>
+  </item>
+</channel>
+
+</rss>

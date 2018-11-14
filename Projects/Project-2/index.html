@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/main.css">
+   <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <!-- Script for color picker (to be deleted) -->
+   <script src="js/jscolor.min.js"></script>
+   <script src="js/custom.js"></script>
+
+   <title>CSSGridProtoype</title>
+</head>
+
+<body>
+   <!-- Container -->
+   <div id="wrapper">
+      <!-- description prototype -->
+      <div id="prototype-description">
+         <!-- Accordion -->
+         <div id="accordion-container">
+            <!-- Accordion option 1 - Personalisatie -->
+            <h2 class="accordion-header">Prototype beschrijving</h2>
+            <!-- Option 1 content -->
+            <div class="accordion-content">
+               In deze demo wilde ik drag &amp; drop testen. Klik hieronder op het vakje tiles en sleep de twee opties naar de telefoon. Ook kan je tiles van de telefoon naar het tiles venster hieronder slepen om ze weg te halen. Om deze functionaliteit mogelijk te
+               maken is gebruikt gemaakt van jquery ui.
+            </div>
+            <!-- Accordion option 2 - Tiles -->
+            <h2 class="accordion-header">De tiles</h2>
+            <!-- Option 2 content -->
+            <div class="accordion-content">
+               <span class="description-text">Drag &amp; drop de tiles</span>
+               <!-- tiles holder, tiles can be dragged and dropped here -->
+               <div id="test">
+                  <div id="sortable2" class="connectedSortable">
+                     <!-- Tile 1 -->
+                     <div class="tile" id="tile-11">
+                        <div class="tile-image"><img src="img/icon-garantie.png" alt="Garantie"></div>
+                        <div class="tile-text personal-bg2">Garantie</div>
+                     </div>
+                     <!-- Tile 2 -->
+                     <div class="tile" id="tile-12">
+                        <div class="tile-image"><img src="img/icon-website.png" alt="Website"></div>
+                        <div class="tile-text personal-bg2">Website</div>
+                     </div>
+                     <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+               </div> <!-- End test -->
+            </div> <!-- End accordion content -->
+         </div> <!-- End accordion container -->
+      </div> <!-- End prototype-description  -->
+      <!-- smartphone -->
+      <div id="smartphone">
+         <div id="smartphone-content-area">
+            <div id="app-header" class="personal-bg">
+               <div id="header-arrow">
+                  <img src="img/arrow.png" height="15px" width="15px" alt="arrow-back">
+               </div>
+               <div id="header-title">
+                  Prototype
+               </div>
+               <div id="header-search">
+                  <img src="img/search.png" height="15px" width="15px" alt="search">
+               </div>
+               <div class="clearfix"></div>
+            </div>
+            <!-- Tiles can be dropped and dragged here -->
+            <div id="app-content" class="connectedSortable">
+               <!-- Tile -->
+               <div class="tile" id="tile-1">
+                  <div class="tile-image"><img src="img/icon-klantenservice.png" alt="Klantenservice"></div>
+                  <div class="tile-text personal-bg2"><a href="https://www.bol.com/nl/klantenservice/index.html?promo=footer_Klanterservice" target="_blank">Klantenservice</a></div>
+               </div>
+               <!-- Tile -->
+               <div class="tile" id="tile-2">
+                  <div class="tile-image"><img src="img/icon-retourinfo.png" alt="retourinfo"></div>
+                  <div class="tile-text personal-bg2"><a href="https://www.bol.com/nl/m/klantenservice/retourneren/index.html?promo=footer_Retourneren" target="_blank">Retourneren</a></div>
+               </div>
+               <!-- Tile -->
+               <div class="tile" id="tile-3">
+                  <div class="tile-image"><img src="img/icon-faq.png" alt="FAQ"></div>
+                  <div class="tile-text personal-bg2"><a href="https://zakelijkverkopen.bol.com/veelgestelde-vragen/" target="_blank">FAQ</a></div>
+               </div>
+               <!-- Tile -->
+               <div class="tile" id="tile-4">
+                  <div class="tile-image"><img src="img/icon-phone.png" alt="Telefoonnummer"></div>
+                  <div class="tile-text personal-bg2">Bel ons!</div>
+               </div>
+               <!-- Tile -->
+               <div class="tile" id="tile-5">
+                  <div class="tile-image"><img src="img/icon-pay.png" alt="Betalen"></div>
+                  <div class="tile-text personal-bg2"><a href="https://www.bol.com/nl/m/klantenservice/betalen/index.html?promo=footer_Betalen" target="_blank">Betaalopties</a></div>
+               </div>
+               <!-- Tile -->
+               <div class="tile" id="tile-6">
+                  <div class="tile-image"><img src="img/icon-coupon.png" alt="Coupon"></div>
+                  <div class="tile-text personal-bg2"><a href="#" target="_blank">Coupon</a></div>
+               </div>
+               <!-- Tile -->
+               <div class="tile" id="tile-7">
+                  <div class="tile-image"><img src="img/icon-klantenservice.png" alt="Klantenservice"></div>
+                  <div class="tile-text personal-bg2">Hello</div>
+               </div>
+               <!-- Tile -->
+               <div class="tile" id="tile-8">
+                  <div class="tile-image"><img src="img/icon-klantenservice.png" alt="Klantenservice"></div>
+                  <div class="tile-text personal-bg2">Test</div>
+               </div>
+            </div>
+            <!-- Bottom menu -->
+            <div id="app-menu" class="personal-bg1">
+               bottom menu
+            </div>
+         </div>
+      </div>
+      <div class="clearfix"></div>
+   </div>
+</body>
+
+</html>

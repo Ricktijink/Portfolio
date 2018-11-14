@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 
+=================================
+BODY
+================================= 
+*/
+body{
+	margin: 0px;
+	padding: 0px;
+		width: 100%;
+		min-width: 960px;
+		height: auto;		
+			font-size: 9pt;
+			line-height: 1.6em;  
+			font-family:Verdana, Geneva, sans-serif;
+				color: #666;
+}
+
+
+}
+
+.highlight{
+	padding: 3px 10px;
+	margin-top: 9px;
+	margin: 9px 5px 0px;
+	display: block;
+	line-height: 1.4em;
+	text-decoration: none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: red;
+}
+
+.option {
+	cursor: pointer; 
+	text-decoration: none; 	
+	font-weight:normal;
+	font-size:14px;
+	font-family: Verdana, Arial, sans-serif;
+	margin: 5px 0px 5px 0px;
+	color: #ff7979;
+	padding: 0.5px 3px;
+	line-height:1.3em;
+	display:block;
+	padding: 10px;
+	color: #999;	
+}
+
+.option:hover{
+	color: #FFFFFF;	
+	background-color:#92cbe9; 
+}
+
+.optionhighlight{
+	color: #FFFFFF;	
+	background-color:#00aff0; 	
+}
+
+a{
+	text-decoration:none;
+	color:#0066FF;	
+}
+
+a:hover {
+	color: #00aff0; 
+}
+
+img {
+	border:none;}
+				
+p{
+	margin-bottom: 1em;
+	line-height:1.6em;
+}
+		
+h2 {
+	font-family: 'DeckerRegular', Arial, sans-serif;
+	margin: 0px;
+	color: #0094cb;
+	padding: 0.5px 3px 0.5px 0px;
+	line-height:1.3em;
+}
+
+h3 {
+	font-weight:normal;
+	font-family: Verdana, Arial, sans-serif;
+	margin: 5px 0px 0px 0px;
+	color: #45a7d8;
+	padding: 0.5px 3px;
+	line-height:1.3em;
+	display:block;
+	padding: 10px;
+	background-color: #92cbe9;
+	color: #FFFFFF;	
+}
+
+h4 {
+	font-family: 'DeckerRegular', Arial, sans-serif;
+	margin: 0px;
+	padding: 0.5px 3px;
+	color: #92cbe9;	
+}
+
+hr{
+	background-color: #eeeeee;
+	height: 0.5px;
+	margin: 0px;
+	padding:0px;
+	opacity: 0.2;
+}
+
+.subtitel{
+	color:#999999;
+	font-weight:bold;
+	font-size:13px;
+}
+
+.underline{
+	text-decoration:underline;
+}
+	
+.more{
+	text-align:center;
+	float: right;
+	padding: 0.5px 4px;
+	display:block;
+	color:#FFFFFF;
+	background-color: #00aff0;
+	width: 65px;
+	font-size:9px;
+}
+
+.more:hover{
+	color: #fff; 
+	background-color: #00aff0;	
+}
+	
+.floatleft{
+	float:left;
+}
+
+.floatright{
+	float:right;
+}
+	
+.break{
+	clear:both;
+}
+			
+/* 
+=================================
+Psychologie
+================================= 
+*/			
+				
+#OuterWrapper{
+	width: 100%;
+	height: auto;
+}
+
+#InnerWrapper{
+	margin: 0px auto;
+	width: 960px;
+	height:auto;
+}
+
+#Header{
+	width: 100%;
+	height: auto;
+	background-image:url(../PSYimages/bg.png);
+	background-repeat:repeat-x;
+	
+}
+
+#TopBar{
+	margin: 0px auto;
+	width: 960px;
+	height: 106px; 
+}
+	
+#Tabs{
+	width: 664px;
+	height: 72px;
+	float: right;
+	margin-top: 34px;
+}
+
+#Logo{
+	width: 175px;
+	height: 106px;
+	float: left;
+}
+
+#BigSlider{
+	margin: 0px auto;
+	width: 960px;
+	height: 315px;
+}
+
+#Navigation{
+	margin: 0px auto;
+	width:960px;
+	height: 43px;
+	background-color: #00aff0;
+}
+
+#Content{
+	width: 960px;
+	height: auto;
+}
+
+.ColumnOneThird{
+	margin-top: 40px;
+	margin-bottom: 40px;	
+	height: auto;
+	width: 300px;
+}
+
+.marginright{
+	margin-right:15px;
+	padding-right: 14px;
+	border-right: 1px solid #eeeeee;
+}
+	
+.FooterColumnOneThird{
+	height: auto;
+	width: 300px;
+}
+
+#Footer{
+	border-top: 5px solid #eeeeee; 
+	font-size:10px;
+	padding: 30px 0px;
+	width: 100%;
+	height: auto;
+	background-color: #f4f4f4;
+}
+
+#FooterRegion{	
+	margin: 0px auto;
+	width: 960px;
+	height:auto;
+}
+
+#copyright{
+	border-top:1px solid #e6e4e4;
+	margin: 0px auto;
+	width: 960px;
+	height:20px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	background-image: url(navi_bg.png);
+	width: 960px;
+	margin: auto;
+	padding:0px;
+}
+ 
+li {
+	float: left;
+}
+ 
+ul a {
+	padding: 3px 10px;
+	margin-top: 9px;
+	margin: 9px 5px 0px;
+	display: block;
+	line-height: 1.4em;
+	text-decoration: none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+ul a:hover {
+	color: #FFF;
+	background-color: #92cbe9;
+}			
+
+#social{
+	width: 90px;
+	height: 22px;
+	float:right;
+}
+	
+	
+/* 
+=================================
+Klachtenbeeld
+================================= 
+*/
+
+.ColumnTwoThird{
+	margin-top: 40px;
+	margin-bottom: 40px;	
+	height: auto;
+	width: 630px;	
+} 
+
+#klachtnr1{
+	width: auto;
+	height: auto;	
+}
+
+#klachtnr2, #klachtnr3, #klachtnr4, #klachtnr5, #klachtnr6, #klachtnr7, #klachtnr8{
+	display: none;
+}
+
+#afspraak1{
+	width: auto;
+	height: auto;	
+}
+
+#afspraak2, #afspraak3, #afspraak4, #afspraak5, #afspraak6, #afspraak7, #afspraak8{
+	display: none;
+}
+
+
+#myslide {width:300px;overflow:hidden;position: relative;min-height:280px; height:auto;}
+ 
+	#myslide .cover{
+		width:1200px; /*------- class mystuff width * number of mystuff divs (160 * 3 = 480)---------- */
+		position: absolute;
+		height:280px;
+	}
+ 
+	#myslide .mystuff {width:300px;float:left;}
+ 
+	.button1,.button2,.button3,.button4{background:#92cbe9;padding:1px 6px;display:block;float:left;margin-right:5px;color:#FFFFFF;}
+	.active{background:#0094cb;display:block;float:left;outline:none;color:#FFFFFF;}
+
+#zkn-score-widget-3045443, .zkn-widget-type-2 .zkn-widget-body, .zkn-widget-type-4 .zkn-widget-body{
+	height: 280px !important;	

@@ -1,313 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <!-- Main stylesheet -->
-   <link rel="stylesheet" type="text/css" href="Css/style.css">
-   <!-- Google fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Main stylesheet -->
+      <link rel="stylesheet" type="text/css" href="Css/style.css">
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 
-   <!-- Important Owl stylesheet -->
-   <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-   <!-- Default Theme -->
-   <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- Important Owl stylesheet -->
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <!-- Default Theme -->
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
 
-   <title>Rick Tijink - CV</title>
+      <title>Rick Tijink - CV</title>
 </head>
+
 <body>
-   <!-- Modal (Temp location) -->
-   <div id="businesscard-modal" class="modal">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h3>Rick Tijink</h3>
-            <h4>Frontend Developer</h4>
-            <div class="modal-header-profile">
-               <img src="Images/businesscard-profile.png" alt="Profile">
+      <!-- Overlay - Navigation -->
+      <nav id="overlay">
+            <!-- close btn -->
+            <a href="#" id="close-menu">X</a>
+            <!-- Menu links -->
+            <div class="overlaymenu">
+                  <a href="index.php" class="menu-link" id="menuItem1">PORTFOLIO</a>
+                  <a href="cv.html" class="menu-link active-page" id="menuItem2">MIJN CV</a>
             </div>
-         </div>
-         <div class="modal-contentarea">
-            <span>E-Mail:</span>
-            <p><a href="mailto:ricktijink@hotmail.com">Ricktijink@hotmail.com</a></p>
-            <span>Telefoon:</span>
-            <p>06 429 22 597</p>
-            <span>Locatie:</span>
-            <p>Nederland, Tilburg</p>
-         </div>
-         <span class="close-modal-button" id="close-modal">&times;</span>
+      </nav>
+      <a href="#" id="open-menu-mobile" class="mobile-menu"><img src="Images/Icons/menu.png"></a>
+      <!-- Modal (Temp location) -->
+      <div id="businesscard-modal" class="modal">
+            <div class="modal-content">
+                  <div class="modal-header">
+                        <h3>Rick Tijink</h3>
+                        <h4>Frontend Developer</h4>
+                        <div class="modal-header-profile">
+                              <img src="Images/businesscard-profile.png" alt="Profile">
+                        </div>
+                  </div>
+                  <div class="modal-contentarea">
+                        <span>E-Mail:</span>
+                        <p><a href="mailto:ricktijink@hotmail.com">Ricktijink@hotmail.com</a></p>
+                        <span>Telefoon:</span>
+                        <p>06 429 22 597</p>
+                        <span>Locatie:</span>
+                        <p>Nederland, Tilburg</p>
+                  </div>
+                  <span class="close-modal-button" id="close-modal">&times;</span>
+            </div>
       </div>
-   </div>
-   <!-- Container for website -->
-   <div class="container">
-      <!-- Sidebar (Change div to sidebar?) -->
-      <div class="page-sidebar">
-         <!-- Sidebar logo -->
-         <div class="sidebar-logo">
-            <div class="logo-icon">
-               <a href="index.html"><img src="Images/Logo.png" alt="Personal Logo"></a>
+      <!-- Container for website -->
+      <div class="container">
+            <!-- Sidebar (Change div to sidebar?) -->
+            <div class="page-sidebar">
+                  <!-- Sidebar logo -->
+                  <div class="sidebar-logo">
+                        <div class="logo-icon">
+                              <a href="index.php"><img src="Images/Logo.png" alt="Personal Logo"></a>
+                        </div>
+                        <div class="logo-text">
+                              Rick Tijink<br />
+                              <span>Front-end Developer</span>
+                        </div>
+                  </div>
+                  <!-- Sidebar content -->
+                  <div class="sidebar-content">
+                        <p>
+                              Recent afgestudeerd van de HBO opleiding ICT &amp; Media design en vanaf 8 Oktober
+                              beschikbaar als Front End Development Trainee via YoungCapital Professionals B.V.
+                        </p>
+                  </div>
+                  <!-- Sidebar footer -->
+                  <div class="sidebar-footer">
+                        <!-- Social Media -->
+                        <div class="footer-social">
+                              <!-- Facebook -->
+                              <div class="soc-icon" id="soc-1">
+                                    <a href="https://www.facebook.com/rick.tijink" target="_blank"><img src="Images/Icons/fb.png" alt="Fb icon"></a>
+                              </div>
+                              <!-- LinkedIn -->
+                              <div class="soc-icon" id="soc-2">
+                                    <a href="https://www.linkedin.com/in/rick-tijink-53548828/" target="_blank"><img src="Images/Icons/in.png" alt="LinkedIn icon"></a>
+                              </div>
+                              <!-- Email -->
+                              <div class="soc-icon" id="soc-3">
+                                    <a href="mailto:ricktijink@hotmail.com"><img src="Images/Icons/mail.png" alt="Email icon"></a>
+                              </div>
+                              <!-- CV -->
+                              <div class="soc-icon" id="open-modal">
+                                    <a href="#"><img src="Images/Icons/about.png" alt="CV icon"></a>
+                              </div>
+                        </div>
+                        <!-- Holds copyright -->
+                        <div class="footer-copy">
+                              Online Portfolio, 2018.<br />
+                              <span>Rick Tijink</span>
+                        </div>
+                  </div>
             </div>
-            <div class="logo-text">
-               Rick Tijink<br/>
-               <span>Front-end Developer</span>
-            </div>
-         </div>
-         <!-- Sidebar content -->
-         <div class="sidebar-content">
-            <p>
-               Hallo, mijn naam is Rick Tijink en ik ben een ICT & Media designer. Dat betekent dat ik me bezig houd met de grafische vormgeving van producten zoals websites, logos, posters en visitekaartjes. Tevens ontwikkel en beheer ik ICT-gerichte applicaties.
-            </p>
-            <div class="sidebar-links">
-               <h3>Navigatie</h3>
-               <nav>
-                  <a href="index.html">PORTFOLIO</a>
-                  <a href="#" class="active-page">MIJN CV</a>
-               </nav>
-            </div>
-         </div>
-         <!-- Sidebar footer -->
-         <div class="sidebar-footer">
-            <!-- Social Media -->
-            <div class="footer-social">
-                  <!-- Facebook -->
-                  <div class="soc-icon">
-                     <a href="https://www.facebook.com/rick.tijink" target="_blank"><img src="Images/Icons/mail.png" alt="Fb icon"></a>
+            <!-- Content area -->
+            <div class="page-content">
+                  <!-- Content top bar -->
+                  <div class="content-topbar">
+                        <!-- topbar title -->
+                        <div class="topbar-title">Mijn CV</div>
+                        <div class="menu-buttons">
+                              <a href="#" id="open-menu"><img src="Images/Icons/menu.png"></a>
+                        </div>
                   </div>
-                  <!-- LinkedIn -->
-                  <div class="soc-icon">
-                     <a href="https://www.linkedin.com/in/rick-tijink-53548828/" target="_blank"><img src="Images/Icons/in.png" alt="LinkedIn icon"></a>
-                  </div>
-                  <!-- Email -->
-                  <div class="soc-icon">
-                     <a href="mailto:ricktijink@hotmail.com"><img src="Images/Icons/mail.png" alt="Email icon"></a>
-                  </div>
-                  <!-- CV -->
-                  <div class="soc-icon" id="open-modal">
-                     <a href="#"><img src="Images/Icons/about.png" alt="CV icon"></a>
-                  </div>
-            </div>
-            <!-- Holds copyright -->
-            <div class="footer-copy">
-               Online Portfolio, 2018.<br/>
-               <span>Rick Tijink</span>
-            </div>
-         </div>
-      </div>
-      <!-- Content area -->
-      <div class="page-content">
-         <!-- Content top bar -->
-         <div class="content-topbar">
-            <!-- topbar title -->
-            <div class="topbar-title">Mijn CV</div>
-            <div class="filter-menu-button">
-               <a href="#"><img src="Images/Icons/hire-me.png"></a>
-               <span>Hire Me:</span>
-            </div>
-         </div>
-         <!-- Masonry for items -->
-         <div class="content-masonry">
-            <div class="cv">
-               <div class="cv-left">
-                  <div class="cv-block me">
-                     <h3>Rick Tijink</h3>
-                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                     </p>
-                  </div>
-                  <div class="cv-block personaldata">
-                     <h3>Gegevens</h3>
-                     <p><span>Leeftijd:</span> 05-03-1988, 30 jaar</p>
-                     <p><span>Locatie:</span> Tilburg</p>
-                     <p><span>Telefoon:</span> N.v.t.</p>
-                     <p><span>E-Mail:</span> <a href="mailto:ricktijink@hotmail.com">ricktijink@hotmail.com</a></p>
-                  </div>
-               </div><!-- End cv left -->
-               <div class="cv-right">
-                  <!-- Werkervaring -->
-                  <div class="cv-block workexperience">
-                     <h3>Recente Werkervaring</h3>
-                     <!-- Werk 1 -->
-                     <div class="work">
-                        <div class="work-title"><span>Afstudeerstage</span> @Ingram Micro</div>
-                        <div class="work-period">2017 - 2018</div>
-                        <div class="work-description">
-                           <p>
-                              Lorem ipsum dolore magna aliqua dolor sit amet, labore et dolore magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                           </p>
-                        </div>
-                     </div>
-                     <!-- Werk 2 -->
-                     <div class="work">
-                        <div class="work-title">
-                           <span>Afstudeerstage</span>@BureauZuid
-                           <span class="tooltip">
-                              <img src="Images/Icons/tooltip-02.png" alt="Tooltip">
-                              <span class="tooltiptext">
-                                 <h4>Toelichting</h4>
-                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat omnis reprehenderit fugit, eos nulla hic unde maxime et quidem, repellendus cupiditate. Nulla, ipsum praesentium distinctio ab necessitatibus fuga non.
-                                 </p>
-                              </span>
-                           </span>
-                        </div>
-                        <div class="work-period">2016 - 2016</div>
-                        <div class="work-description">
-                           <p>
-                              Lorem ipsum dolore magna aliqua dolor sit amet, labore et dolore magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                           </p>
-                        </div>
-                     </div>
-                     <!-- Werk 3 -->
-                     <div class="work">
-                        <div class="work-title"><span>Site ontwikkelaar &amp; beheerder</span> @MC2</div>
-                        <div class="work-period">2012 - Heden</div>
-                        <div class="work-description">
-                           <p>
-                              Lorem ipsum dolore magna aliqua dolor sit amet, labore et dolore magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Onderwijs -->
-                  <div class="cv-block education">
-                     <h3>Onderwijs</h3>
-                     <!-- Onderwijs 1 -->
-                     <div class="study">
-                        <div class="study-title">
-                           <span>HBO ICT &amp; Media Design</span> @Fontys Hogeschool
-                           <span class="tooltip">
-                              <img src="Images/Icons/tooltip-01.png" alt="Tooltip">
-                              <span class="tooltiptext">
-                                 <h4>Toelichting</h4>
-                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat omnis reprehenderit fugit, eos nulla hic unde maxime et quidem, repellendus cupiditate. Nulla, ipsum praesentium distinctio ab necessitatibus fuga non.
-                                 </p>
-                              </span>
-                           </span>
-                        </div>
-                        <div class="study-period">2010 - 2018 (Afgerond)</div>
-                        <div class="study-status"></div>
-                     </div>
-                     <!-- Onderwijs 2 -->
-                     <div class="study">
-                        <div class="study-title"><span>MBO Mechatronica</span> @ROC Midden Brabant</div>
-                        <div class="study-period">2004 - 2008 (Afgerond)</div>
-                        <div class="study-status"></div>
-                     </div>
-                     <!-- Onderwijs 3 -->
-                     <div class="study">
-                        <div class="study-title"><span>VMBO TL Techniek</span> @Mill Hill</div>
-                        <div class="study-period">2000 - 2004 (Afgerond)</div>
-                        <div class="study-status"></div>
-                     </div>
-                  </div>
-               </div><!-- End cv right -->
-               <div class="clearfix"></div>
-               <!-- Vaardigheden -->
-               <div class="cv-block skills">
-                  <div class="skillslider-controls">
-                     <a class="btn prev"><</a>
-                     <a class="btn next">></a>
-                  </div>
-                  <h3>Vaardigheden</h3>
-                  <!-- Owl carousel -->
-                  <div id="owl-demo" class="owl-carousel owl-theme">
-                     <!-- item -->
-                     <div class="item" >
-                        <div class="skill-item">
-                           <img src="Images/Icons/html5-icon.png" alt="HTML5 icon">
-                        </div>
-                        <h4>HTML5</h4>
-                        <div class="meter">
-                           <span style="width: 85%"></span>
-                        </div>
-                     </div>
-                     <!-- item -->
-                     <div class="item">
-                        <div class="skill-item">
-                           <img src="Images/Icons/css3-icon.png" alt="CSS3 icon">
-                        </div>
-                        <h4>CSS3</h4>
-                        <div class="meter">
-                           <span style="width: 80%"></span>
-                        </div>
-                     </div>
-                     <!-- item -->
-                     <div class="item">
-                        <div class="skill-item">
-                           <img src="Images/Icons/html5-icon.png" alt="HTML5 icon">
-                        </div>
-                        <h4>Javascript</h4>
-                        <div class="meter">
-                           <span style="width: 45%"></span>
-                        </div>
-                     </div>
-                     <!-- item -->
-                     <div class="item">
-                        <div class="skill-item">
-                           <img src="Images/Icons/css3-icon.png" alt="CSS3 icon">
-                        </div>
-                        <h4>Jquery</h4>
-                        <div class="meter">
-                           <span style="width: 65%"></span>
-                        </div>
-                     </div>
-                     <!-- item -->
-                     <div class="item">
-                        <div class="skill-item">
-                           <img src="Images/Icons/html5-icon.png" alt="HTML5 icon">
-                        </div>
-                        <h4>PHP</h4>
-                        <div class="meter">
-                           <span style="width: 35%"></span>
-                        </div>
-                     </div>
-                     <!-- item -->
-                     <div class="item">
-                        <div class="skill-item">
-                           <img src="Images/Icons/html5-icon.png" alt="HTML5 icon">
-                        </div>
-                        <h4>SQL/MYSQLI</h4>
-                        <div class="meter">
-                           <span style="width: 65%"></span>
-                        </div>
-                     </div>
-                     <!-- item -->
-                     <div class="item">
-                        <div class="skill-item">
-                           <img src="Images/Icons/html5-icon.png" alt="HTML5 icon">
-                        </div>
-                        <h4>Item</h4>
-                        <div class="meter">
-                           <span style="width: 25%"></span>
-                        </div>
-                     </div>
-                     <!-- item -->
-                     <div class="item">
-                        <div class="skill-item">
-                           <img src="Images/Icons/html5-icon.png" alt="HTML5 icon">
-                        </div>
-                        <h4>Iteme</h4>
-                        <div class="meter">
-                           <span style="width: 85%"></span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="customNavigation">
-                    <!-- <a class="btn play">Autoplay</a>
+                  <!-- Masonry for items -->
+                  <div class="content-masonry">
+                        <div class="cv">
+                              <div class="cv-left">
+                                    <div class="cv-block me">
+                                          <h3>Rick Tijink</h3>
+                                          <p>
+                                                Recent afgestudeerd van de HBO opleiding ICT &amp; Media design en op
+                                                zoek naar een leuke baan als Front-end developer! <br><br> Ik ben
+                                                begonnen in de Techniek sector met een MBO opleiding Mechatronica.
+                                                Richting het einde van de studie besefte ik dat ik mijzelf dit niet zag
+                                                doen voor de rest van mijn leven. Dus nadat ik deze opleiding succesvol
+                                                had afgerond ben ik gaan kijken naar een opleiding en een vakgebied
+                                                waar wel mijn passie lag. Tijdens het zoeken heb ik gewerkt bij Mise en
+                                                Place en MaxxiMap. Uiteindelijk heb ik een weloverwogen besluit genomen
+                                                om voor de HBO opleiding ICT &amp; Media Design en heb hier geen moment
+                                                spijt van gehad!
+                                          </p>
+                                    </div>
+                                    <div class="cv-block personaldata">
+                                          <h3>Gegevens</h3>
+                                          <p><span>Leeftijd:</span> 05-03-1988, 30 jaar</p>
+                                          <p><span>Locatie:</span> Tilburg</p>
+                                          <p><span>Telefoon:</span> 06 429 22 597</p>
+                                          <p><span>E-Mail:</span> <a href="mailto:ricktijink@hotmail.com">ricktijink@hotmail.com</a></p>
+                                    </div>
+                              </div><!-- End cv left -->
+                              <div class="cv-right">
+                                    <!-- Werkervaring -->
+                                    <div class="cv-block workexperience">
+                                          <h3>Recente Werkervaring</h3>
+                                          <!-- Werk 1 -->
+                                          <div class="work">
+                                                <div class="work-title"><span>Afstudeerstage</span> @Ingram Micro</div>
+                                                <div class="work-period">2017 - 2018</div>
+                                                <div class="work-description">
+                                                      <p>
+                                                            Het project bestond uit het verrichten van onderzoek naar,
+                                                            en de ontwikkeling van een prototype web-applicatie waarmee
+                                                            de dynamische bedrukking van bezorgdozen op maat mogelijk
+                                                            zou worden.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <!-- Werk 2 -->
+                                          <div class="work">
+                                                <div class="work-title">
+                                                      <span>Afstudeerstage</span>@BureauZuid
+                                                      <span class="tooltip">
+                                                            <img src="Images/Icons/tooltip-02.png" alt="Tooltip">
+                                                            <span class="tooltiptext">
+                                                                  <h4>Toelichting</h4>
+                                                                  <p>
+                                                                        Deze afstudeerstage is helaas niet succesvol
+                                                                        afgerond. Door alle extra werkzaamheden naast
+                                                                        mijn eigen afstudeerproject had ik te weinig
+                                                                        tijd voor mijn eigen afstudeerproject. Dit is
+                                                                        op tijd aangekaart maar hier was niet veel aan
+                                                                        te doen i.v.m. een drukke periode bij het
+                                                                        stagebedrijf.
+                                                                  </p>
+                                                            </span>
+                                                      </span>
+                                                </div>
+                                                <div class="work-period">2016 - 2016</div>
+                                                <div class="work-description">
+                                                      <p>
+                                                            Het project bestond uit het verrichten van onderzoek naar,
+                                                            en de ontwikkeling van een prototype web-applicatie voor
+                                                            webshop gericht op tweedehands merkkleding voor jonge
+                                                            vrouwen. Daarnaast was ik projectleider van twee webshop
+                                                            projecten, stuurde ik een filipijns ontwikkelstudio aan van
+                                                            15 man en onderhield ik klantcontact.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <!-- Werk 3 -->
+                                          <div class="work">
+                                                <div class="work-title"><span>Site ontwikkelaar &amp; beheerder</span>
+                                                      @MC2</div>
+                                                <div class="work-period">2012 - Heden</div>
+                                                <div class="work-description">
+                                                      <p>
+                                                            Het bedenken, designen en ontwikkelen van de website voor
+                                                            het psychologie/fysiotherapie praktijk Mc2. Hier heb ik
+                                                            mijn 2e jaars stage gedaan en succesvol afgerond. Sindsdien
+                                                            is een goede relatie in stand gekomen en doe ik regelmatig
+                                                            nog werk voor ze.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- Onderwijs -->
+                                    <div class="cv-block education">
+                                          <h3>Onderwijs</h3>
+                                          <!-- Onderwijs 1 -->
+                                          <div class="study">
+                                                <div class="study-title">
+                                                      <span>HBO ICT &amp; Media Design</span> @Fontys Hogeschool
+                                                      <span class="tooltip">
+                                                            <img src="Images/Icons/tooltip-02.png" alt="Tooltip">
+                                                            <span class="tooltiptext">
+                                                                  <h4>Toelichting</h4>
+                                                                  <p>
+                                                                        De eerste 4 jaar verliepen zonder problemen
+                                                                        behalve dat ik 1 vak moest repareren.
+                                                                        Vervolgens ben ik gaan zoeken naar een
+                                                                        afstudeerstage (BureauZuid). Nadat deze helaas
+                                                                        niet gelukt was heb ik een pauze in de studie
+                                                                        ingelast. Nadat ik het hele afstudeerproces had
+                                                                        doorgelopen had ik op dat moment even geen
+                                                                        motivatie om weer opnieuw te beginnen met een
+                                                                        tweede afstudeerstage. Tijdens de pauze heb ik
+                                                                        gewerkt. Uiteindelijk was ik klaar om de studie
+                                                                        af te gaan ronden en dit ging de tweede keer
+                                                                        zonder problemen en gaf het bedrijf Ingram
+                                                                        Micro mij een 8 voor de stage.
+                                                                  </p>
+                                                            </span>
+                                                      </span>
+                                                </div>
+                                                <div class="study-period">2010 - 2018 (Afgerond)</div>
+                                                <div class="study-status"></div>
+                                          </div>
+                                          <!-- Onderwijs 2 -->
+                                          <div class="study">
+                                                <div class="study-title"><span>MBO Mechatronica</span> @ROC Midden
+                                                      Brabant</div>
+                                                <div class="study-period">2004 - 2008 (Afgerond)</div>
+                                                <div class="study-status"></div>
+                                          </div>
+                                          <!-- Onderwijs 3 -->
+                                          <div class="study">
+                                                <div class="study-title"><span>VMBO TL Techniek</span> @Mill Hill</div>
+                                                <div class="study-period">2000 - 2004 (Afgerond)</div>
+                                                <div class="study-status"></div>
+                                          </div>
+                                    </div>
+                              </div><!-- End cv right -->
+                              <div class="clearfix"></div>
+                              <!-- Vaardigheden -->
+                              <div class="cv-block skills">
+                                    <div class="skillslider-controls">
+                                          <a class="btn prev">
+                                                <</a> <a class="btn next">>
+                                          </a>
+                                    </div>
+                                    <h3>Vaardigheden (10)</h3>
+                                    <!-- Owl carousel -->
+                                    <div id="owl-demo" class="owl-carousel owl-theme">
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/html5-icon.png" alt="HTML5 icon">
+                                                </div>
+                                                <h4>HTML5</h4>
+                                                <div class="meter">
+                                                      <span style="width: 85%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/css3-icon.png" alt="CSS3 icon">
+                                                </div>
+                                                <h4>CSS3</h4>
+                                                <div class="meter">
+                                                      <span style="width: 80%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/js-icon.png" alt="JS icon">
+                                                </div>
+                                                <h4>Javascript</h4>
+                                                <div class="meter">
+                                                      <span style="width: 45%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/jquery-icon.png" alt="Jquery icon">
+                                                </div>
+                                                <h4>Jquery</h4>
+                                                <div class="meter">
+                                                      <span style="width: 65%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/php-icon.png" alt="PHP icon">
+                                                </div>
+                                                <h4>PHP</h4>
+                                                <div class="meter">
+                                                      <span style="width: 35%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/sql-icon.png" alt="sql icon">
+                                                </div>
+                                                <h4>SQL</h4>
+                                                <div class="meter">
+                                                      <span style="width: 65%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/git-icon.png" alt="Git icon">
+                                                </div>
+                                                <h4>Git</h4>
+                                                <div class="meter">
+                                                      <span style="width: 65%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/bootstrap-icon.png" alt="Bootstrap icon">
+                                                </div>
+                                                <h4>Bootstrap</h4>
+                                                <div class="meter">
+                                                      <span style="width: 30%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/scrum-icon.png" alt="Scrum icon">
+                                                </div>
+                                                <h4>Scrum</h4>
+                                                <div class="meter">
+                                                      <span style="width: 55%"></span>
+                                                </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="item">
+                                                <div class="skill-item">
+                                                      <img src="Images/Icons/kanban-icon.png" alt="Kanban icon">
+                                                </div>
+                                                <h4>Kanban</h4>
+                                                <div class="meter">
+                                                      <span style="width: 30%"></span>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="customNavigation">
+                                          <!-- <a class="btn play">Autoplay</a>
                     <a class="btn stop">Stop</a> -->
+                                    </div>
+                              </div>
+                        </div>
+                        <a href="#"><img src="Images/Icons/up.png" onclick="topFunction()" id="myBtn" alt="Go top"></a>
                   </div>
-               </div>
-	         </div>
-            <a href="#"><img src="Images/Icons/up.png" onclick="topFunction()" id="myBtn" alt="Go top"></a>
-         </div>
+            </div>
       </div>
-   </div>
-   <!-- Jquery -->
-   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-   <!-- Include js plugin -->
-   <script src="owl-carousel/owl.carousel.js"></script>
-   <!-- Main code file -->
-   <script src="Js/javascript.js"></script>
+      <!-- Jquery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <!-- Include js plugin -->
+      <script src="owl-carousel/owl.carousel.js"></script>
+      <!-- Main code file -->
+      <script src="Js/javascript.js"></script>
 </body>
+
 </html>

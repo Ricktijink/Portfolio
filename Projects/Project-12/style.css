@@ -1,0 +1,170 @@
+body{
+    background: #5cbaf6;
+    font-family: ubuntu;
+}
+
+h1{
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.content{
+    background: #fff;
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 20px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: auto;
+}
+
+li:nth-child(even){
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+li span{
+    display: inline-block;
+}
+
+li span:nth-child(1){
+    font-size: 16px;
+    margin: 6px 40px 0px 0px;
+    font-weight: bold;
+    color: #999;
+    width: 24%;
+}
+
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+    width: 10%;
+    margin-right: 20px;
+}
+
+li span:nth-child(3){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+    width: 10%;
+    margin-right: 20px;
+}
+
+li span:nth-child(4){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+    width: 10%;
+    margin-right: 20px;
+}
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fe5454;
+    color: #FFF;
+    transition: all ease 0.2s;
+}
+li div:hover{
+    background-color: red;
+    color: #FFF;
+}
+
+form input{
+    float: left;
+    /* width: 19%; */
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 0 1%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+#med-name{
+   width: 24%;
+}
+
+#med-type{
+   width: 10%;
+}
+
+#med-size{
+   width: 10%;
+}
+
+#med-amount{
+   width: 10%;
+}
+
+form input:focus{
+    outline: none;
+    border-bottom: 3px solid #5cbaf6;
+    padding-bottom: 8px;
+    transition: all ease 0.2s;
+}
+
+form:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+form select{
+   float: left;
+   width: 19%;
+   margin: 0;
+   border: 0;
+   border-bottom: 1px solid #eee;
+   margin: 0 1%;
+   padding: 10px;
+   display: block;
+   box-sizing: border-box;
+   font-size: 18px;
+}
+
+button{
+    border: 1px solid #eaeaea;
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 13px;
+    width: 14%;
+    font-weight: bold;
+    font-family: ubuntu;
+    letter-spacing: 1px;
+    color: #999;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover{
+   background-color: #5cbaf6;
+   color: #FFFFFF;
+}

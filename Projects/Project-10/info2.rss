@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>News item 4: Jazeker</title>
+  <link>http://www.google.com</link>
+  <description>This is a sample description to see if everything works. This is the first 1.</description>
+  <item>
+    <title>News item 5: Tijidk</title>
+    <link>http://www.ricktijink.me</link>
+    <description>This is a sample description to see if everything works. This is the first 2.</description>
+  </item>
+  <item>
+    <title>News item 6: iets</title>
+    <link>http://www.w3schools.com/xml</link>
+    <description>This is a sample description to see if everything works. This is the first 3.</description>
+  </item>
+</channel>
+
+</rss>
