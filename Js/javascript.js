@@ -18,6 +18,8 @@ $(".option").click(function() {
    }
 });
 
+
+// Add or Remove active class for filter link
 $(".filter-menu li a").click(function() {
    $(".filter-menu li a").removeClass('active-filter');
    $(this).addClass('active-filter');
@@ -77,7 +79,7 @@ $(document).ready(function() {
 
    var duration = 400;
 
-   $('#1,#4,#3,#13, #2,#5,#6,#7,#8,#9,#10,#11,#12').each(function(i) {
+   $('#1,#2,#3,#4,#5,#6,#7,#8,#9,#10').each(function(i) {
       $(this).delay( i*(duration/2) ).animate({opacity:1}, duration);
    });
 
@@ -101,7 +103,7 @@ $(document).ready(function() {
       owl.trigger('owl.prev');
    })
    $(".play").click(function() {
-      owl.trigger('owl.play', 1000); //owl.play event accept autoPlay speed as second parameter
+      owl.trigger('owl.play', 1000); 
    })
    $(".stop").click(function() {
       owl.trigger('owl.stop');
@@ -129,68 +131,13 @@ function outsidePreviewClose(e){
    }
 }
 
+// Click post, get ID and show related image
 var postContent = document.getElementById("post-content");
 
 function reply_click(clicked_id) {
-   // alert(clicked_id);
    postContent.innerHTML = '<img src="Images/Projects/project' + clicked_id + '.jpg">';
-
 }
 
-// Post Image slider
-
-jQuery(document).ready(function($) {
-
-
-   setInterval(function() {
-      moveRight();
-   }, 3000);
-
-
-   var slideCount = $('#slider ul li').length;
-   var slideWidth = $('#slider ul li').width();
-   var slideHeight = $('#slider ul li').height();
-   var sliderUlWidth = slideCount * slideWidth;
-
-   $('#slider').css({
-      width: slideWidth,
-      height: slideHeight
-   });
-
-   $('#slider ul').css({
-      width: sliderUlWidth,
-      marginLeft: -slideWidth
-   });
-
-   $('#slider ul li:last-child').prependTo('#slider ul');
-
-   function moveLeft() {
-      $('#slider ul').animate({
-         left: +slideWidth
-      }, 200, function() {
-         $('#slider ul li:last-child').prependTo('#slider ul');
-         $('#slider ul').css('left', '');
-      });
-   };
-
-   function moveRight() {
-      $('#slider ul').animate({
-         left: -slideWidth
-      }, 200, function() {
-         $('#slider ul li:first-child').appendTo('#slider ul');
-         $('#slider ul').css('left', '');
-      });
-   };
-
-   $('a.control_prev').click(function() {
-      moveLeft();
-   });
-
-   $('a.control_next').click(function() {
-      moveRight();
-   });
-
-});
 
 var overlay = document.getElementById('overlay');
 var closeMenu = document.getElementById('close-menu');

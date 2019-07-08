@@ -20,8 +20,8 @@
             <a href="#" id="close-menu">Close X</a>
             <!-- Menu links -->
             <div class="overlaymenu">
-                  <a href="#" class="menu-link active-page" id="menuItem1">PORTFOLIO</a>
-                  <a href="skills.php" class="menu-link" id="menuItem2">SKILLS</a>
+                  <a href="index.php" class="menu-link" id="menuItem1">PORTFOLIO</a>
+                  <a href="#" class="menu-link active-page" id="menuItem2">SKILLS</a>
                   <a href="cv.html" class="menu-link" id="menuItem3">MIJN CV</a>
             </div>
       </nav>
@@ -109,7 +109,7 @@
                   <!-- Content topbar -->
                   <div class="content-topbar">
                         <!-- topbar title -->
-                        <div class="topbar-title">Portfolio</div>
+                        <div class="topbar-title">Skills</div>
                         <div class="menu-buttons">
                               <a href="#" id="open-menu"><img src="Images/Icons/menu.png"></a>
                               <a href="#" id="filter-menu-button"><img src="Images/Icons/filter.png"></a>
@@ -123,17 +123,16 @@
                               <ul>
                                     <!-- Filter options -->
                                     <li class="option" data-filter="all"><a href="#" class="active-filter">All</a></li>
-                                    <li class="option" data-filter="html"><a href="#">HTML5</a></li>
-                                    <li class="option" data-filter="css"><a href="#">CSS3</a></li>
-                                    <li class="option" data-filter="php"><a href="#">PHP</a></li>
-                                    <li class="option" data-filter="js"><a href="#">Javascript</a></li>
-                                    <li class="option" data-filter="jq"><a href="#">Jquery</a></li>
+                                    <li class="option" data-filter="frontend"><a href="#">Front-end</a></li>
+                                    <li class="option" data-filter="backend"><a href="#">Back-end</a></li>
+                                    <li class="option" data-filter="design"><a href="#">Design</a></li>
+                                    <li class="option" data-filter="tools"><a href="#">Tools</a></li>
                                     <li class="clearfix"></li>
                               </ul>
                         </div>
                         <!-- Projects -->
                         <main>
-                              <?php include 'inc_projects.php';?>
+                              <?php include 'inc_skills.php';?>
                               <div class="clearfix"></div>
                         </main>
                         <!-- Go to top btn -->
