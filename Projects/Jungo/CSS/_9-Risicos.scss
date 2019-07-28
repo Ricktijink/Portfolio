@@ -1,0 +1,75 @@
+.risicos{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding: 120px 0px;
+    text-align: center;
+    background-color: #F3F3F3;
+
+    .risicos-title{
+        font-size: 3rem;
+        color: #04364A;
+        letter-spacing: 0.1rem;
+        margin-bottom: 30px;
+    }
+
+    .risicos-line{
+        display: block;
+        background-color: $orange;
+        width: 60px;
+        height: 8px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        margin: 0px auto 24px;
+    }
+
+    .risicos-description{
+        width: 40%;
+        margin: 0px auto 60px;
+        color: $fontColor;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+}
+
+.risicos-container{
+    margin: 0px auto;
+    display: flex;
+    width: 60%;
+
+    .risico{
+        flex:1;
+        margin: 10px;
+
+        .risico-number{
+            background-color: #FFFFFF;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+        .risico-title{
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #04364A;
+            letter-spacing: 0.1rem;
+            margin-bottom: 30px;
+        }
+
+        .risico-description{
+            color: #8e8e8e;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            width: 80%;
+            margin: 0px auto;
+        }
+    }
+}

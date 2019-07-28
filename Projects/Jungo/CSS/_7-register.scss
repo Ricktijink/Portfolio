@@ -1,0 +1,54 @@
+.register{
+    width: 80%;
+    height: 85vh;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    .register-wrapper{
+        margin-left:5%;
+
+        .register-title{
+            width: 40%;
+            font-size: 5rem;
+            font-weight: bold;
+            color: #04364A;
+            letter-spacing: 0.1rem;
+            margin-bottom: 50px;
+        }
+    
+        .register-button{
+            padding: 16px 30px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.16rem;
+            background-color: $orange;
+            color: #FFFFFF;
+        }
+
+        .register-button:hover{
+            background-color: $darkerorange;
+            color: #FFFFFF;
+        }
+    }
+
+    .register-image{
+        width: 70%;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        background-color: $pink;
+        
+        img{
+            display: block;
+        }
+    }
+}

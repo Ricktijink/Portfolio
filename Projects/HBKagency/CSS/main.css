@@ -1,0 +1,803 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 114px;
+  width: 100%;
+  background-color: #4C2EA1;
+}
+.header .header-wrapper {
+  margin: 0px auto;
+  height: 114px;
+  width: 70%;
+}
+.header .header-wrapper .navigation {
+  float: left;
+}
+.header .header-wrapper .navigation ul {
+  list-style: none;
+}
+.header .header-wrapper .navigation ul li {
+  float: left;
+  height: 114px;
+}
+.header .header-wrapper .navigation ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 46px 30px;
+  display: block;
+  font-size: 1.16rem;
+  font-family: "Hammersmith One", sans-serif;
+  transition: color 0.3s ease;
+}
+.header .header-wrapper .navigation ul li a:hover {
+  color: #F14A59;
+}
+.header .header-wrapper .navigation ul li .nav-divider {
+  display: block;
+  background-color: #c0aef3;
+  width: 4px;
+  height: 4px;
+  margin-top: 54px;
+}
+.header .header-wrapper .cta-button {
+  height: 114px;
+  width: 130px;
+  float: right;
+  background-color: #F14A59;
+}
+.header .header-wrapper .cta-button a {
+  transition: background-color 0.3s ease;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #F14A59;
+  height: 100%;
+  padding: 36px 30px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  font-family: "Hammersmith One", sans-serif;
+}
+.header .header-wrapper .cta-button a:hover {
+  background-color: #ed1b2e;
+}
+
+.hero-banner {
+  min-height: 70vh;
+  height: auto;
+  width: 70%;
+  margin: 0px auto 90px auto;
+  padding-top: 110px;
+}
+.hero-banner .hero-banner-logo {
+  height: 100px;
+  margin-bottom: 60px;
+}
+.hero-banner .hero-banner-logo .logo-title {
+  color: #FFC600;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  display: inline-block;
+}
+.hero-banner .hero-banner-logo .logo-title::after {
+  content: " ";
+  width: 24px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #c0aef3;
+  display: inline-block;
+  top: -16px;
+  left: 14px;
+  position: relative;
+}
+.hero-banner .hero-banner-logo .logo-text {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.4rem;
+  position: relative;
+  top: 25px;
+  left: 22px;
+  line-height: 1.6;
+}
+.hero-banner .hero-banner-slogan {
+  margin-bottom: 90px;
+}
+.hero-banner .hero-banner-slogan h1 {
+  color: #FFFFFF;
+  font-size: 6.4rem;
+  font-family: "Hammersmith One", sans-serif;
+}
+.hero-banner .slider-controls .slider-button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 30px;
+  background-color: #c0aef3;
+  transition: background-color 0.3s ease;
+}
+.hero-banner .slider-controls a:hover {
+  background-color: #F14A59;
+}
+.hero-banner .slider-controls .active-slider-button {
+  background-color: #F14A59;
+}
+
+.portfolio-highlights {
+  height: auto;
+  width: 74%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "big-highlight big-highlight medium-highlight medium-highlight" "big-highlight big-highlight small-highlight-left small-highlight-right";
+}
+.portfolio-highlights .big-highlight {
+  position: relative;
+  background-color: green;
+  grid-area: big-highlight;
+  cursor: pointer;
+  overflow: hidden;
+}
+.portfolio-highlights .big-highlight .hightlight-description {
+  background-color: #DD336A;
+}
+.portfolio-highlights .big-highlight .hightlight-description .highlight-type {
+  color: #FFC600;
+}
+.portfolio-highlights .medium-highlight {
+  background-color: blue;
+  position: relative;
+  grid-area: medium-highlight;
+  cursor: pointer;
+  overflow: hidden;
+}
+.portfolio-highlights .medium-highlight .hightlight-description {
+  background-color: #157156;
+}
+.portfolio-highlights .medium-highlight .hightlight-description .highlight-type {
+  color: #C3D82D;
+}
+.portfolio-highlights .small-highlight-left {
+  background-color: yellow;
+  grid-area: small-highlight-left;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.portfolio-highlights .small-highlight-left .hightlight-description {
+  background-color: #2B4AA0;
+}
+.portfolio-highlights .small-highlight-left .hightlight-description .highlight-type {
+  color: #F47621;
+}
+.portfolio-highlights .small-highlight-right {
+  background-color: pink;
+  position: relative;
+  grid-area: small-highlight-right;
+  cursor: pointer;
+  overflow: hidden;
+}
+.portfolio-highlights .small-highlight-right .hightlight-description {
+  background-color: #4C4847;
+}
+.portfolio-highlights .small-highlight-right .hightlight-description .highlight-type {
+  color: #7BCFDB;
+}
+.portfolio-highlights .highlight-image {
+  transition: all 0.3s ease;
+}
+.portfolio-highlights .highlight-image img {
+  width: 100%;
+  height: auto;
+}
+.portfolio-highlights .highlight-image:hover {
+  -webkit-transform: scale(1.15);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.15);
+  /* Firefox */
+  -ms-transform: scale(1.15);
+  /* IE 9 */
+  -o-transform: scale(1.15);
+  /* Opera */
+  transform: scale(1.15);
+}
+.portfolio-highlights .hightlight-description {
+  position: absolute;
+  bottom: 0;
+  height: 110px;
+  width: 100%;
+  padding: 30px 40px;
+}
+.portfolio-highlights .hightlight-description .highlight-type {
+  display: block;
+  font-size: 1.2rem;
+}
+.portfolio-highlights .hightlight-description .highlight-title {
+  font-family: "Hammersmith One", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+.awards {
+  background-color: #FFFFFF;
+  width: 74%;
+  margin: 0px auto;
+  min-height: 100vh;
+  height: auto;
+  padding: 10rem 15rem;
+}
+.awards h1 {
+  color: #544099;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 6rem;
+  display: inline-block;
+  margin: 0px 20px 70px 0px;
+}
+.awards .year-filter-button {
+  border: none;
+  background-color: #ffd133;
+  font-family: "Hammersmith One", sans-serif;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  top: -16px;
+  transition: background-color 0.5s ease;
+}
+.awards .year-filter-button i {
+  position: relative;
+  top: -2px;
+  left: 6px;
+}
+.awards .year-filter-button:hover {
+  cursor: pointer;
+  background-color: #FFC600;
+}
+.awards .awards-container {
+  display: flex;
+}
+.awards .awards-container .awardtype-list {
+  flex: 1;
+}
+.awards .awards-container .awardtype-list ul {
+  list-style: none;
+}
+.awards .awards-container .awardtype-list ul li {
+  margin: 0px 0px 30px 0px;
+}
+.awards .awards-container .awardtype-list ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+}
+.awards .awards-container .awardtype-list ul li a:hover {
+  color: #DD336A;
+}
+.awards .awards-container .awardtype-list ul li a::before {
+  display: none;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: #FFC600;
+  margin-right: 10px;
+  transition: margin-right 0.5s ease;
+}
+.awards .awards-container .awardtype-list ul li a:hover::before {
+  display: inline-block;
+}
+.awards .awards-container .awardtype-list ul .active-awardtype {
+  color: #DD336A;
+  margin-left: 20px;
+}
+.awards .awards-container .awardtype-list ul .active-awardtype::before {
+  display: inline-block;
+}
+.awards .awards-container .awardtype-list ul .active-awardtype:hover::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: #FFC600;
+  margin-right: 10px;
+}
+.awards .awards-container .earned-awards {
+  flex: 3;
+}
+.awards .awards-container .earned-awards .award {
+  border: 1px solid lightgrey;
+  width: 48%;
+  float: left;
+  margin: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.awards .awards-container .earned-awards .award-image {
+  transition: background-color 0.5s ease;
+}
+.awards .awards-container .earned-awards .award-image img {
+  width: 100%;
+  height: auto;
+}
+.awards .awards-container .earned-awards .award-title {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-family: "Hammersmith One", sans-serif;
+  color: #FFFFFF;
+  padding: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease;
+}
+.awards .awards-container .earned-awards .award:hover > .award-title {
+  background-color: #FFC600;
+}
+.awards .awards-container .earned-awards .award:hover > .award-image {
+  background-color: #F14A59;
+}
+
+.custom-select {
+  position: relative;
+  width: 84px !important;
+  font-family: Arial;
+  display: inline-block;
+  font-size: 16px;
+  top: -10px;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #FFC600;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #FFC600;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.big-projects {
+  width: 74%;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+}
+.big-projects .big-project {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  flex: 1;
+}
+.big-projects .big-project img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+.big-projects .big-project img:hover {
+  -webkit-transform: scale(1.15);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.15);
+  /* Firefox */
+  -ms-transform: scale(1.15);
+  /* IE 9 */
+  -o-transform: scale(1.15);
+  /* Opera */
+  transform: scale(1.15);
+}
+.big-projects .big-project .big-project-description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 40px;
+}
+.big-projects .big-project .big-project-description .big-project-type {
+  display: block;
+  font-size: 1.2rem;
+}
+.big-projects .big-project .big-project-description .big-project-title {
+  font-family: "Hammersmith One", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  display: block;
+  text-transform: uppercase;
+}
+.big-projects .project-left .big-project-description {
+  background-color: #6C7586;
+}
+.big-projects .project-left .big-project-description .big-project-type {
+  color: #66E391;
+}
+.big-projects .project-right .big-project-description {
+  background-color: #D03A3C;
+}
+.big-projects .project-right .big-project-description .big-project-type {
+  color: #FFC600;
+}
+
+.featured-article {
+  width: 74%;
+  height: auto;
+  margin: -4px auto 0px auto;
+  display: flex;
+}
+.featured-article .article-image {
+  flex: 1;
+  background-color: #F14A59;
+  background: url(../IMG/article.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.featured-article .article-image img {
+  width: 100%;
+  height: auto;
+}
+.featured-article .article-container {
+  flex: 1;
+  min-height: 70vh;
+  background-color: #FFFFFF;
+}
+.featured-article .article-container .daily-article {
+  padding: 150px;
+}
+.featured-article .article-container .daily-article .article-author {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.featured-article .article-container .daily-article .article-author .article-author-initial {
+  font-family: "Hammersmith One", sans-serif;
+  display: block;
+  width: 70px;
+  border: 10px solid #F89E63;
+  height: 70px;
+  padding: 13px 19px;
+  font-size: 1.4rem;
+  background-color: #F15E58;
+  border-radius: 50%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+.featured-article .article-container .daily-article .article-author .article-author-information {
+  height: auto;
+  flex: 10;
+}
+.featured-article .article-container .daily-article .article-author .article-author-information .article-author-name {
+  display: block;
+  color: #131313;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.featured-article .article-container .daily-article .article-author .article-author-information .article-author-profession {
+  display: block;
+  color: #5131A8;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1rem;
+}
+.featured-article .article-container .daily-article .article-divider {
+  display: block;
+  height: 1px;
+  margin: 40px auto 80px;
+  background-color: lightgrey;
+}
+.featured-article .article-container .daily-article .article-content {
+  border: blue;
+  height: auto;
+}
+.featured-article .article-container .daily-article .article-content .article-publish-date {
+  display: inline-block;
+  font-family: "Hammersmith One", sans-serif;
+  color: grey;
+  text-transform: uppercase;
+  margin-right: 50px;
+  position: relative;
+}
+.featured-article .article-container .daily-article .article-content .article-publish-date::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  display: block;
+  background-color: grey;
+  position: absolute;
+  top: 6px;
+  right: -28px;
+}
+.featured-article .article-container .daily-article .article-content .article-duration {
+  display: inline-block;
+  font-family: "Hammersmith One", sans-serif;
+  color: grey;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.featured-article .article-container .daily-article .article-content .article-title {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.featured-article .article-container .daily-article .article-content ul {
+  list-style: none;
+}
+.featured-article .article-container .daily-article .article-content ul li {
+  background-color: #ececec;
+  padding: 10px 20px;
+  float: left;
+  margin: 0px 6px 70px 0px;
+  color: #8e8e8e;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.featured-article .article-container .daily-article .article-content ul li:hover {
+  background-color: #c9c9c9;
+}
+.featured-article .article-container .daily-article .article-content p {
+  color: #9a9a9a;
+  clear: both;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+.featured-article .article-container .daily-article .article-content button {
+  background-color: #F14A59;
+  border: none;
+  color: white;
+  font-family: "Hammersmith One", sans-serif;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.featured-article .article-container .daily-article .article-content button:hover {
+  background-color: #f32335;
+}
+
+.links-contact {
+  width: 74%;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+}
+.links-contact .links-block {
+  flex: 1;
+  margin-top: 100px;
+}
+.links-contact .links-block .links-list {
+  width: 44%;
+  float: left;
+  padding: 0% 10% 8% 10%;
+}
+.links-contact .links-block .links-list .red {
+  color: #F14A59;
+}
+.links-contact .links-block .links-list .yellow {
+  color: #FFC600;
+}
+.links-contact .links-block .links-list .green {
+  color: #C3D82D;
+}
+.links-contact .links-block .links-list .blue {
+  color: #7BCFDB;
+}
+.links-contact .links-block .links-list .links-header {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.links-contact .links-block .links-list ul {
+  list-style: none;
+  min-height: 130px;
+}
+.links-contact .links-block .links-list ul li {
+  margin-bottom: 10px;
+}
+.links-contact .links-block .links-list ul li a {
+  color: #FFFFFF;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.links-contact .links-block .links-list ul li a:hover {
+  color: #7BCFDB;
+}
+.links-contact .contact-block {
+  flex: 1;
+  margin-top: 100px;
+}
+.links-contact .contact-block h2 {
+  font-family: "Hammersmith One", sans-serif;
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin: 0px 20%;
+  margin-bottom: 40px;
+}
+.links-contact .contact-block form {
+  margin-left: 20%;
+  margin-bottom: 30px;
+}
+.links-contact .contact-block form input {
+  display: block;
+  color: #FFC600;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1rem;
+  padding: 20px 20px 20px 30px;
+  border: 0;
+  outline: 0;
+  width: 60%;
+  background: transparent;
+  border-bottom: 1px solid #c0aef3;
+}
+.links-contact .contact-block form input::placeholder {
+  color: #FFFFFF;
+}
+.links-contact .contact-block form i {
+  position: relative;
+  top: 39px;
+  color: #FFC600;
+}
+.links-contact .contact-block button {
+  background-color: #F14A59;
+  border: none;
+  color: white;
+  font-family: "Hammersmith One", sans-serif;
+  padding: 15px 32px;
+  margin-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.links-contact .contact-block button:hover {
+  background-color: #f32335;
+}
+
+.footer {
+  height: 160px;
+  width: 100%;
+  background-color: #4C2EA1;
+}
+.footer .footer-container {
+  display: flex;
+  width: 74%;
+  margin: 0px auto;
+  padding-top: 24px;
+}
+.footer .footer-container .footer-logo {
+  flex: 1;
+}
+.footer .footer-container .footer-logo .logo-title {
+  color: #FFC600;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  display: inline-block;
+}
+.footer .footer-container .footer-logo .logo-title::after {
+  content: " ";
+  width: 24px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #c0aef3;
+  display: inline-block;
+  top: -16px;
+  left: 14px;
+  position: relative;
+}
+.footer .footer-container .footer-logo .logo-text {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.4rem;
+  position: relative;
+  top: 25px;
+  left: 22px;
+  line-height: 1.6;
+}
+.footer .footer-container .footer-copyright-socialmedia {
+  flex: 1;
+}
+.footer .footer-container .footer-copyright-socialmedia .copyright {
+  margin-top: 20px;
+  display: block;
+  text-align: right;
+  color: #FFFFFF;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.4rem;
+}
+.footer .footer-container .footer-copyright-socialmedia .socialmedia {
+  float: right;
+  padding-top: 10px;
+}
+.footer .footer-container .footer-copyright-socialmedia .socialmedia .social-icon i {
+  color: #FFC600;
+  padding: 4px;
+  transition: color 0.3s ease;
+}
+.footer .footer-container .footer-copyright-socialmedia .socialmedia .social-icon i:hover {
+  color: #F14A59;
+  cursor: pointer;
+}
+
+.container {
+  background-color: #5131AA;
+}
+
+/*# sourceMappingURL=main.css.map */

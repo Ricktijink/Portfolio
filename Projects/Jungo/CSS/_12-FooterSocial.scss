@@ -1,0 +1,59 @@
+.footer-social{
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+    height: auto;
+    padding-bottom: 120px;
+
+    .copyright{
+        color: grey;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+    .made-by{
+        color: grey;
+        display: inline-block;
+        margin-right: 60px;
+
+        i{
+            color: red;
+            margin: 0px 4px;
+        }
+    }
+    
+    .socialmedia{
+        width: 30%;
+        height: auto;
+        display: inline-block;
+        flex:1;
+        
+        .social a{
+            display: inline-block;
+            border: 2px solid #CFDCE2;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 50%; /* the magic */
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            margin: 0px 4px;
+            
+            i{
+                color: $darkblue;
+                
+            }
+        }
+
+        .social a:hover{
+            background-color: $orange;
+
+            i{
+                color: #FFFFFF!important;
+            }
+        }
+    }
+}

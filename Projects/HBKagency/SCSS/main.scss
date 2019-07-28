@@ -1,0 +1,28 @@
+
+// TODO: Colors fixen alleen main colors
+// TODO: Fonts hernoemen
+// TODO: Per section SCSS partials maken en importen in main.scss
+// TODO: Nesten max 3 levels proberen
+// TODO: Testen in alle browsers
+
+// Imports
+@import '0-Reset-Colors-Fonts';
+@import '1-Header';
+@import '2-Hero-banner';
+@import '3-Portfolio-highlights';
+@import '4-Awards';
+@import '5-Big-projects';
+@import '6-Featured-article';
+@import '7-Links-contact';
+@import '8-Footer';
+
+.container {
+    background-color: color(container);
+}           
+   
+   
+
+
+
+
+

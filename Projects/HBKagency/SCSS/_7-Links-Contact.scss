@@ -1,0 +1,123 @@
+// Section 7: Links & Contact
+
+.links-contact{
+    width: 74%;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+
+    .links-block{
+        flex: 1;
+        margin-top: 100px;
+
+        .links-list{
+            width: 44%;
+            float: left;
+            padding: 0% 10% 8% 10%;
+
+            .red{
+                color: color(mainred)
+            }
+
+            .yellow{
+                color: color(mainyellow);
+            }
+            
+            .green{
+                color: color(mlightgreen);
+            }
+            
+            .blue{
+                color: color(mlightblue);
+            }
+
+            .links-header{
+                font-family: $main-font;
+                font-size: 3rem;
+                margin-bottom: 30px;
+            }
+            
+            ul{
+                list-style: none;
+                min-height: 130px;
+                    
+                li{
+                    margin-bottom: 10px;
+                    
+                    a{
+                        color: #FFFFFF;
+                        font-family: $main-font;
+                        font-size: 1.1rem;
+                        text-decoration: none;
+                        transition: color 0.3s ease;
+                    }
+
+                    a:hover{
+                        color: color(mlightblue);
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-block{
+        flex: 1;
+        margin-top: 100px;
+
+        h2{
+            font-family: $main-font;
+            color: #FFFFFF;
+            font-size: 3rem;
+            margin: 0px 20%;
+            margin-bottom: 40px;
+        }
+
+        form{
+            margin-left: 20%;
+            margin-bottom: 30px;
+            
+            input{
+                display: block;
+                color: color(mainyellow);
+                font-family: $main-font;
+                font-size: 1rem;
+                padding: 20px 20px 20px 30px;
+                border: 0;
+                outline: 0;
+                width: 60%;
+                background: transparent;
+                border-bottom: 1px solid color(light-blue);
+            }
+            
+            input::placeholder { 
+                color: #FFFFFF; 
+            }
+            
+            i{
+                position: relative;
+                top: 39px;
+                color: color(mainyellow);
+            }
+        }
+        
+        button {
+            background-color: #F14A59;
+            border: none;
+            color: white;
+            font-family: $main-font;
+            padding: 15px 32px;
+            margin-top: 60px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover{
+            background-color: #f32335;
+        }
+    }
+}

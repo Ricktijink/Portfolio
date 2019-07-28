@@ -1,0 +1,93 @@
+
+.header{
+    height: 100px;
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 10px;
+
+    .header-logo{
+        height: 80px;
+        width: 160px;
+        margin: 0px 10px 0px 0px; 
+        float: left;
+    }
+    
+    .header-navigation{
+        float: left;
+        margin-top: 10px;
+        
+        ul{
+            list-style: none;
+            
+            li{
+                float:left;
+                text-decoration: none;
+            }
+            
+            .navigation-links{
+                text-decoration: none;
+                padding: 18px 24px;
+                display: block;
+                font-size: 1.16rem;
+                color: $darkblue;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            
+            .navigation-links:hover{
+                color: $orange;
+            }
+        }
+    }
+    
+    .header-userarea{
+        float: right;
+        margin-top: 10px;
+        
+        ul{
+            list-style: none;
+
+            li{
+                float:left;
+                text-decoration: none;
+            }
+
+            .userarea-links{
+                text-decoration: none;
+                padding: 18px 24px;
+                display: block;
+                font-size: 1.16rem;
+                color: $darkblue;
+                cursor: pointer;
+            }
+            
+            i{
+                padding: 22px 24px;
+                display: block;
+                font-size: 1.16rem;
+                color: $darkblue;
+                cursor: pointer;
+                position: relative;
+            }
+            
+            .userarea-links:hover{
+                color: $orange;
+            }
+        }
+        
+        .cta-button{
+            background-color: $orange;
+            color: #FFFFFF!important;
+            padding: 16px 20px!important;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            position: relative;
+            top: 2px;
+        }
+
+        .cta-button:hover{
+            background-color: $darkerorange;
+        }
+    }
+}

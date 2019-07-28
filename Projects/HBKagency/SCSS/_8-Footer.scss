@@ -1,0 +1,78 @@
+// SECTION 8: Footer
+
+.footer{
+    height: 160px;
+    width: 100%;
+    background-color: color(header);
+    
+    .footer-container{
+        display: flex;
+        width: 74%;
+        margin: 0px auto;
+        padding-top: 24px; 
+        
+        .footer-logo{
+            flex: 1;
+            
+            .logo-title{
+                color: color(mainyellow);
+                font-family: $main-font;
+                font-weight: bold;
+                font-size: 3rem;
+                display: inline-block;
+            }
+            
+            .logo-title::after { 
+                content: " ";
+                width: 24px;
+                height: 2px;
+                margin-right: 4px;
+                background-color: color(light-blue);
+                display: inline-block;
+                top: -16px;
+                left: 14px;
+                position: relative;
+            }
+        
+            .logo-text{
+                display: inline-block;
+                color: #FFFFFF;
+                font-family: $main-font;
+                font-size: 1.4rem;
+                position: relative;
+                top: 25px;
+                left: 22px;
+                line-height: 1.6;
+            }
+        }
+    
+        .footer-copyright-socialmedia{
+            flex:1;
+
+            .copyright{
+                margin-top: 20px;
+                display: block;
+                text-align: right;
+                color: #FFFFFF;
+                font-family: $main-font;
+                font-size:1.4rem;
+            }
+
+            .socialmedia{
+                float: right;
+                padding-top: 10px;
+
+                .social-icon i{
+                    color: color(mainyellow);
+                    padding: 4px;
+                    transition: color 0.3s ease;
+                }
+
+                .social-icon i:hover{
+                    color: color(mainred);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

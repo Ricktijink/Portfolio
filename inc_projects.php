@@ -1,7 +1,32 @@
+
+<!-- Cafe Avada -->
+<div class="post filter html css js react" id="1">
+    <div class="post-image">
+        <span class="ribbon">W.i.P!</span>
+        <div class="post-details-cover">
+            React app (W.i.P)
+        </div>
+        <div class="post-image-cover">
+            <div class="image-cover-wrapper">
+                <span class="post-image-cover-title"><a href="https://ricktijink.github.io/cafe-avada/" target="_blank"><img src="Images/Icons/preview.png"></a></span>
+                <span class="post-hover-text">
+                    Design van <a href="https://avada.theme-fusion.com/cafe/" target="_blank">Avada</a>
+                </span>
+            </div>
+        </div>
+        <img src="Images/Projects/cafe-avada.jpg" alt="Cafe-avada">
+    </div>
+    <div class="post-text">
+        <span class="post-title">Cafe Avada (W.I.P)</span>
+        <span class="post-subtitle">
+            <a href="https://github.com/Ricktijink/cafe-avada" target="_blank">Github</a>
+        </span>
+    </div>
+</div>
 <!-- Jungo -->
 <div class="post filter html css jq" id="1">
     <div class="post-image">
-        <span class="ribbon">New!</span>
+        <span class="ribbon">W.i.P!</span>
         <div class="post-details-cover">
             details test
         </div>
@@ -25,7 +50,7 @@
 <!-- HBKAgency -->
 <div class="post filter html css jq" id="2">
     <div class="post-image">
-        <span class="ribbon">New!</span>
+        <span class="ribbon">W.i.P!</span>
         <div class="post-image-cover">
             <div class="image-cover-wrapper">
                 <span class="post-image-cover-title"><a href="Projects/HBKagency/index.html" target="_blank"><img src="Images/Icons/preview.png"></a></span>
@@ -65,7 +90,7 @@
     </div>
 </div>
 <!-- MeanStacks -->
-<div class="post filter html css" id="4">
+<div class="post filter html css ang js" id="4">
     <div class="post-image">
         <div class="post-image-cover">
             <div class="image-cover-wrapper">
@@ -85,7 +110,7 @@
     </div>
 </div>
 <!-- Afstudeer Project -->
-<div class="post filter html css jq" id="5">
+<div class="post filter html css jq php" id="5">
     <div class="post-image">
         <div class="post-image-cover">
             <div class="image-cover-wrapper">
@@ -99,6 +124,25 @@
     </div>
     <div class="post-text">
         <span class="post-title">Afstudeerproject</span>
+        <span class="post-subtitle">
+            <a href="#" class="not-available" target="_blank">Github</a>
+        </span>
+    </div>
+</div>
+<!-- RockPaperScissors -->
+<div class="post filter html css js" id="9">
+    <div class="post-image">
+        <div class="post-image-cover">
+            <div class="image-cover-wrapper">
+                <span class="post-image-cover-title"><a href="Projects/RockPaperScissors/index.html" target="_blank"><img src="Images/Icons/preview.png"></a></span>
+                <span class="post-hover-text">
+                </span>
+            </div>
+        </div>
+        <img src="Images/Projects/rockpaperscissors.jpg" alt="rockpaperscissors">
+    </div>
+    <div class="post-text">
+        <span class="post-title">Rock Paper Scissors (vanilla JS)</span>
         <span class="post-subtitle">
             <a href="#" class="not-available" target="_blank">Github</a>
         </span>
@@ -167,29 +211,8 @@
         </span>
     </div>
 </div>
-
-<!-- Portfolio V3 -->
-<div class="post filter html css jq" id="9">
-    <div class="post-image">
-        <div class="post-image-cover">
-            <div class="image-cover-wrapper">
-                <span class="post-image-cover-title"><a href="Projects/PortfolioV3/index.html" target="_blank"><img src="Images/Icons/preview.png"></a></span>
-                <span class="post-hover-text">
-                    Eigen Design
-                </span>
-            </div>
-        </div>
-        <img src="Images/Projects/portfoliov3.jpg" alt="Portfolio V3 (Oud)">
-    </div>
-    <div class="post-text">
-        <span class="post-title">Portfolio V3 (oud)</span>
-        <span class="post-subtitle">
-            <a href="#" class="not-available" target="_blank">Github</a>
-        </span>
-    </div>
-</div>
 <!-- Medicijn app -->
-<div class="post filter html css jq" id="10">
+<div class="post filter html css" id="10">
     <div class="post-image">
         <div class="post-image-cover">
             <div class="image-cover-wrapper">

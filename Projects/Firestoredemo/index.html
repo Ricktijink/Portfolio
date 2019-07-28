@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   <!-- <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script> -->
+   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+   <title>Firebase - Firestore</title>
+</head>
+<body>
+   <h1>My medicine list</h1>
+   <div class="content">
+      <form id="add-item-form">
+         <input type="text" id="med-name" name="name" placeholder="Name">
+         <!-- <input type="text" name="type" placeholder="Type"> -->
+         <select name="type" id="med-type" placeholder="Type">
+            <option value="" disabled selected>Type</option>
+            <option value="Pill">Pill</option>
+            <option value="Cream">Cream</option>
+            <option value="Other">Other</option>
+         </select>
+         <input type="text" id="med-size" name="size" placeholder="Size">
+         <input type="text" id="med-amount" name="amount" placeholder="Amount">
+         <button>Add medicine</button>
+      </form>
+      <ul id="item-list"></ul>
+   </div>
+
+   <script>
+      // Initialize Firebase
+      var config = {
+         apiKey: "AIzaSyDos6G10skM4hR-RS8osVS3Jc_3OE8DJ1k",
+         authDomain: "medicijn-app.firebaseapp.com",
+         databaseURL: "https://medicijn-app.firebaseio.com",
+         projectId: "medicijn-app",
+         storageBucket: "",
+         messagingSenderId: "642962405020"
+      };
+      firebase.initializeApp(config);
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+   </script>
+   <script src="app.js"></script>
+</body>
+</html>

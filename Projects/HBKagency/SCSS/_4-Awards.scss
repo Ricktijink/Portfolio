@@ -1,0 +1,224 @@
+// Section 4: Awards
+
+.awards{
+    background-color: #FFFFFF;
+    width: 74%;
+    margin: 0px auto;
+    min-height: 100vh;
+    height: auto;
+    padding: 10rem 15rem;
+
+    h1 {
+        color: color(mainpurple);
+        font-family: $main-font;
+        font-size: 6rem;
+        display: inline-block;
+        margin: 0px 20px 70px 0px;
+    }
+
+    .year-filter-button{
+        border: none;
+        background-color: color(mainyellow-lighter);
+        font-family: $main-font;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        position: relative;
+        top: -16px;
+        transition: background-color 0.5s ease;
+        
+        i{
+            position: relative;
+            top: -2px;
+            left: 6px;
+        }
+    }
+        
+    .year-filter-button:hover{
+        cursor: pointer;
+        background-color: color(mainyellow);
+    }
+
+    .awards-container{
+        display: flex;
+    
+        .awardtype-list{
+            flex:1;
+    
+            ul{
+                list-style: none;
+    
+                li{
+                    margin: 0px 0px 30px 0px;
+                    
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-family: $main-font;
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        transition: all 0.1s ease;
+                    }
+
+                    a:hover{
+                        color: color(mainpink);
+                    }
+
+                    a::before {
+                        display: none;
+                        font-style: normal;
+                        font-variant: normal;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+    
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f0da";
+                        color: color(mainyellow);
+                        margin-right:10px;
+                        transition: margin-right 0.5s ease;
+                    }
+
+                    a:hover::before {
+                        display: inline-block;
+                    }
+                }
+
+                .active-awardtype{
+                    color: color(mainpink);
+                    margin-left: 20px;
+                }
+
+                .active-awardtype::before {
+                    display: inline-block;
+                }
+
+                .active-awardtype:hover::before {
+                    display: inline-block;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\f0da";
+                    color: color(mainyellow);
+                    margin-right:10px;
+                }
+            }
+        }
+    
+        .earned-awards{
+            flex:3;
+
+            .award{
+                border: 1px solid lightgrey;
+                width: 48%;
+                float: left;
+                margin: 4px;
+                cursor: pointer;
+                position: relative;
+            }
+
+            .award-image{
+                transition: background-color 0.5s ease;
+                
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .award-title{
+                display: block;
+                position: absolute;
+                width: 100%;
+                bottom:0;
+                text-align: center;
+                font-family: $main-font;
+                color: #FFFFFF;
+                padding:16px;
+                text-transform: uppercase;
+                transition: background-color 0.5s ease;
+            }
+
+            .award:hover > .award-title{
+                background-color: color(mainyellow);
+            }
+            
+            .award:hover > .award-image{
+                background-color: color(mainred);
+            }
+        }
+    }
+}
+
+
+// Current test of a dropdown
+
+.custom-select {
+    position: relative;
+    width: 84px!important;
+    font-family: Arial;
+    display: inline-block;
+    font-size: 16px;
+    top: -10px;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: color(mainyellow);
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: color(mainyellow);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

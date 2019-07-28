@@ -1,0 +1,33 @@
+
+.list{
+    width: 50%;
+    height: auto;
+    margin: 0px auto 120px;
+
+    .list-item{
+        margin: 0px auto 80px;
+        display: flex;
+
+        .list-image{
+            flex:2;
+            margin-right: 80px;
+        }
+
+        .list-description{
+            flex:10;
+
+            h3{
+                font-size: 1.8rem;
+                color: #04364A;
+                letter-spacing: 0.1rem;
+                margin-bottom: 20px;
+            }
+    
+            p{
+                color: $fontColor;
+                font-size: 1.1rem;
+                line-height: 1.8;
+            }
+        }
+    }
+}

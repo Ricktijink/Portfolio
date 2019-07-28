@@ -127,7 +127,8 @@
                                     <li class="option" data-filter="css"><a href="#">CSS3</a></li>
                                     <li class="option" data-filter="php"><a href="#">PHP</a></li>
                                     <li class="option" data-filter="js"><a href="#">Javascript</a></li>
-                                    <li class="option" data-filter="jq"><a href="#">Jquery</a></li>
+                                    <li class="option" data-filter="ang"><a href="#">Angular</a></li>
+                                    <li class="option" data-filter="react"><a href="#">React</a></li>
                                     <li class="clearfix"></li>
                               </ul>
                         </div>
@@ -143,8 +144,6 @@
       </div>
       <!-- Jquery -->
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <!-- Include owl carousel plugin -->
-      <script src="owl-carousel/owl.carousel.js"></script>
       <!-- Include custom javascript -->
       <script src="Js/javascript.js"></script>
 </body>

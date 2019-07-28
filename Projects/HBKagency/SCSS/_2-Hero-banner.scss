@@ -1,0 +1,75 @@
+// Section 2: Hero Banner
+
+.hero-banner{
+    min-height: 70vh;
+    height: auto;
+    width: 70%;
+    margin: 0px auto 90px auto;
+    padding-top: 110px;
+
+    .hero-banner-logo{
+        height: 100px;
+        margin-bottom: 60px;
+
+        .logo-title{
+            color: color(mainyellow);
+            font-family: $main-font;
+            font-weight: bold;
+            font-size: 3rem;
+            display: inline-block;
+        }
+        
+        .logo-title::after { 
+            content: " ";
+            width: 24px;
+            height: 2px;
+            margin-right: 4px;
+            background-color: color(light-blue);
+            display: inline-block;
+            top: -16px;
+            left: 14px;
+            position: relative;
+        }
+
+        .logo-text{
+            display: inline-block;
+            color: #FFFFFF;
+            font-family: $main-font;
+            font-size: 1.4rem;
+            position: relative;
+            top: 25px;
+            left: 22px;
+            line-height: 1.6;
+        }
+    }
+
+    .hero-banner-slogan{
+        margin-bottom: 90px;
+
+        h1{
+            color: #FFFFFF;
+            font-size: 6.4rem;
+            font-family: $main-font;
+        }
+    }
+
+    .slider-controls{
+
+        .slider-button{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 30px;
+            background-color: color(light-blue);
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover{
+            background-color: color(mainred);
+        }
+        
+        .active-slider-button{
+            background-color: color(mainred);
+        }
+    }
+}

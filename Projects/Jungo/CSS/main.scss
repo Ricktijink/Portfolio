@@ -1,0 +1,95 @@
+// TODO: p titles etc allemaal hier zetten centraal ipv per ding opnieuw
+// TODO: Responsive
+// TODO: Pink image met bg maken (beter voor rescalen)
+// TODO: Engels in code
+
+
+// Reset
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+// Colors
+
+$lighterblue: #BEE4E3;
+$darkblue: #04364A;
+$orange: #F26856;
+$darkerorange: darken(#F26856, 10%);
+$mint: #3DBDA6;
+$pink: #F6BEB0;
+
+// Font colors
+
+$fontColor: #8e8e8e;
+$fontColorDark: darken(#8e8e8e, 40%);
+
+// Partial Imports 
+
+@import '1-Header';
+@import '2-Herobanner';
+@import '3-Campagne';
+@import '4-List';
+@import '5-Rendement';
+@import '6-Crowd';
+@import '7-Register';
+@import '8-Alternatives';
+@import '9-Risicos';
+@import '10-Questions';
+@import '11-Footer';
+@import '12-FooterSocial';
+
+
+// General styling
+
+.website-container{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.stickyhelper{
+    position: fixed;
+    bottom:5%;
+    right: 3%;
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 96px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50%; /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;        
+    background-color: #4970B7;
+    animation: filterPulse 1s infinite 0s ease;
+    cursor: pointer;
+
+    i{
+        color:#FFFFFF;
+    }
+}
+
+.stickyhelper:hover{
+    background-color: #7293d1;
+}
+
+@keyframes filterPulse{
+    0%{
+        transform: rotate(0) scale(1);
+     }
+    50%{
+        transform: rotate(0) scale(0.9);
+     }
+    100%{
+        transform: rotate(0) scale(1);
+     }
+}

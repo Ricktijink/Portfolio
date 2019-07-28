@@ -1,0 +1,166 @@
+// Section 6: Featured Article
+
+.featured-article{
+    width: 74%;
+    height: auto;
+    margin:-4px auto 0px auto;
+    display: flex;
+
+    .article-image{
+        flex: 1;
+        background-color: #F14A59;
+        background: url(../IMG/article.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .article-container{
+        flex: 1;
+        min-height: 70vh;
+        background-color: #FFFFFF;
+        
+        .daily-article{
+            padding: 150px;
+            
+            .article-author{
+                width: 100%;
+                height: auto;
+                display: flex;
+
+                .article-author-initial{
+                    font-family: $main-font;
+                    display: block;
+                    width: 70px;
+                    border: 10px solid #F89E63;
+                    height: 70px;
+                    padding: 13px 19px;
+                    font-size: 1.4rem;
+                    background-color: #F15E58;
+                    border-radius: 50%;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                    margin-right: 30px;
+                }
+
+                .article-author-information{
+                    height: auto;
+                    flex: 10;
+
+                    .article-author-name{
+                        display: block;
+                        // TODO: Variable aanmaken nodig?
+                        color: #131313;
+                        font-family: $main-font;
+                        font-size: 1.6rem;
+                        margin-top:10px;
+                    }
+
+                    .article-author-profession{
+                        display: block;
+                        // TODO: Variable aanmaken nodig?
+                        color: #5131A8;
+                        font-family: $main-font;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            
+            .article-divider{
+                display: block;
+                height: 1px;
+                margin: 40px auto 80px;
+                background-color: lightgrey;
+            }
+
+            .article-content{
+                border: blue;
+                height: auto;
+
+                .article-publish-date{
+                    display: inline-block;
+                    font-family: $main-font;
+                    color: grey;
+                    text-transform: uppercase;
+                    margin-right: 50px;    
+                    position: relative;
+                }
+                
+                .article-publish-date::after{
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    display: block;
+                    background-color: grey;
+                    position: absolute;
+                    top: 6px;
+                    right: -28px;
+                }
+                
+                .article-duration{
+                    display: inline-block;
+                    font-family: $main-font;
+                    color: grey;
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                }
+
+                .article-title{
+                    font-family: $main-font;
+                    font-size: 3rem;
+                    margin-bottom: 30px;
+                }
+
+                ul {
+                    list-style: none;
+                    
+                    li {
+                        background-color: #ececec;
+                        padding: 10px 20px;
+                        float: left;
+                        margin: 0px 6px 70px 0px;
+                        color: #8e8e8e;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+                    }
+                    
+                    li:hover{
+                        background-color: #c9c9c9;
+                    }
+                }
+                
+                p{
+                    color: #9a9a9a;
+                    clear: both;
+                    font-family: $body-font;
+                    line-height: 1.8;
+                    font-size: 1.2rem;
+                    margin-bottom: 50px;
+                }
+
+                button {
+                    background-color: #F14A59;
+                    border: none;
+                    color: white;
+                    font-family: $main-font;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                button:hover{
+                    background-color: #f32335;
+                }
+            }
+        }
+    }
+}

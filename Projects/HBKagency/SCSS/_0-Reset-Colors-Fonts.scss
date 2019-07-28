@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Colors
+
+$colors: (
+    container: #5131AA,    
+    
+    header: #4C2EA1,
+    header-light: lighten(#4C2EA1, 10%),
+    
+    light-text: #FFFFFF,
+    
+    mainred: #F14A59,
+    mainred-hover: darken(#F14A59, 10%),
+    mainred-light: lighten(#F14A59, 10%),
+    
+    light-blue: #c0aef3,
+    mainyellow: #FFC600,
+    mainyellow-lighter: lighten(#FFC600, 10%),
+    mainpink: #DD336A,
+    maingreen: #157156,
+    mlightgreen: #C3D82D,
+    mainorange: #F47621,
+    mainblue: #2B4AA0,
+    mlightblue: #7BCFDB,
+    maingrey: #4C4847,
+    mainpurple: #544099,
+    mainmint: #66E391,
+    mainreddarker: #D03A3C,
+    lightergrey: #6C7586
+);
+    
+// Fonts
+
+$main-font: 'Hammersmith One', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};

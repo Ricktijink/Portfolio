@@ -1,0 +1,75 @@
+// SECTION 1: Header
+
+.header{
+    height: 114px;
+    width: 100%;
+    background-color: color(header);
+    
+    .header-wrapper{
+        margin: 0px auto;
+        height: 114px;
+        width: 70%;
+        
+        .navigation{
+            float: left;
+    
+            ul{
+                list-style: none;
+                
+                li {
+                    float: left;
+                    height: 114px;
+                    
+                    a{
+                        color: color(light-text);
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        padding: 46px 30px;
+                        display: block;
+                        font-size: 1.16rem;
+                        font-family: $main-font;
+                        transition: color 0.3s ease;
+                    }
+
+                    a:hover{
+                        color: color(mainred);
+                    }
+
+                    .nav-divider{
+                        display: block;
+                        background-color: color(light-blue);
+                        width: 4px;
+                        height: 4px;
+                        margin-top: 54px;
+                    }
+                }
+            }
+        }
+    
+        .cta-button{
+            height: 114px;
+            width: 130px;
+            float: right;
+            background-color: color(mainred);
+            
+            a{
+                transition: background-color 0.3s ease;
+                color: #FFFFFF;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                background-color: color(mainred);
+                height: 100%;
+                padding: 36px 30px;
+                font-size: 1.2rem;
+                text-align: center;
+                display: block;
+                font-family: $main-font;
+            }
+
+            a:hover{
+                background-color: color(mainred-hover);
+            }
+        }
+    }
+}

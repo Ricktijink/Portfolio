@@ -1,0 +1,71 @@
+// Section 5: Big Projects
+
+.big-projects{
+    width: 74%;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+
+    .big-project{
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        flex:1;
+        
+        img{
+            width: 100%;
+            height: auto;
+            transition: all 0.3s ease;
+        }
+
+        img:hover{
+            -webkit-transform:scale(1.15); /* Safari and Chrome */
+            -moz-transform:scale(1.15); /* Firefox */
+            -ms-transform:scale(1.15); /* IE 9 */
+            -o-transform:scale(1.15); /* Opera */
+            transform:scale(1.15);
+        }
+
+        .big-project-description{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 30px 40px;
+
+            .big-project-type{
+                display: block;
+                font-size: 1.2rem;
+            }
+    
+            .big-project-title{
+                font-family: $main-font;
+                color: #FFFFFF;
+                font-size: 1.5rem;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .project-left{
+
+        .big-project-description{
+            background-color: color(lightergrey);
+            
+            .big-project-type{
+                color: color(mainmint);
+            }
+        }
+    }
+
+    .project-right{
+
+        .big-project-description{
+            background-color: color(mainreddarker);
+            
+            .big-project-type{
+                color: color(mainyellow);
+            }
+        }
+    }
+}

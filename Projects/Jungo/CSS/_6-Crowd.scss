@@ -1,0 +1,49 @@
+.crowd{
+    width: 80%;
+    height: auto;
+    padding: 120px 0px;
+    margin: 0px auto;
+    text-align: center;
+
+    .crowd-title{
+        font-size: 3rem;
+        color: #04364A;
+        letter-spacing: 0.1rem;
+        margin-bottom: 30px;
+    }
+
+    .crowd-line{
+        display: block;
+        background-color: $orange;
+        width: 60px;
+        height: 8px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        margin: 0px auto 24px;
+    }
+
+    .crowd-description{
+        width: 40%;
+        margin: 0px auto 60px;
+        color: $fontColor;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .crowd-comparison{
+        width: 70%;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+
+        .crowd-block{
+            flex:1;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

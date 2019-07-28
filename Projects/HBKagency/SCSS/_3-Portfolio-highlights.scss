@@ -1,0 +1,118 @@
+// Section 3: Portfolio Highlights
+
+.portfolio-highlights{
+    height: auto;
+    width: 74%;
+    margin: 0px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "big-highlight big-highlight medium-highlight medium-highlight" 
+                         "big-highlight big-highlight small-highlight-left small-highlight-right";
+    
+
+    .big-highlight { 
+        position: relative;
+        background-color: green;
+        grid-area: big-highlight; 
+        cursor: pointer;
+        overflow: hidden;
+        
+        .hightlight-description{
+            background-color: color(mainpink);
+        
+            .highlight-type{
+                color: color(mainyellow);
+            }
+        }
+    }
+    
+    .medium-highlight { 
+        background-color: blue;
+        position: relative;
+        grid-area: medium-highlight; 
+        cursor: pointer;
+        overflow: hidden;
+            
+        .hightlight-description{
+            background-color: color(maingreen);
+            
+            .highlight-type{
+                color: color(mlightgreen);
+            }
+        }
+    }
+    
+    .small-highlight-left { 
+        background-color: yellow;
+        grid-area: small-highlight-left; 
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        .hightlight-description{
+            background-color: color(mainblue);
+
+            .highlight-type{
+                color: color(mainorange);
+            }
+        }
+    }
+    
+    .small-highlight-right { 
+        background-color: pink;
+        position: relative;
+        grid-area: small-highlight-right; 
+        cursor: pointer;
+        overflow: hidden;
+            
+        .hightlight-description{
+            background-color: color(maingrey);
+
+            .highlight-type{
+                color: color(mlightblue);
+            }
+        }
+    }
+
+    // General stuff featureds
+    
+    .highlight-image{
+        transition: all 0.3s ease;
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .highlight-image:hover{
+        -webkit-transform:scale(1.15); /* Safari and Chrome */
+        -moz-transform:scale(1.15); /* Firefox */
+        -ms-transform:scale(1.15); /* IE 9 */
+        -o-transform:scale(1.15); /* Opera */
+        transform:scale(1.15);
+    }
+
+    .hightlight-description{
+        position: absolute;
+        bottom: 0;
+        height: 110px;
+        width: 100%;
+        padding: 30px 40px;
+        
+        .highlight-type{
+            display: block;
+            font-size: 1.2rem;
+        }
+        
+        .highlight-title{
+            font-family: $main-font;
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+}
