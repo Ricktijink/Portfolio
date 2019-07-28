@@ -1,0 +1,141 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .modal-content {
+        background: #fff;
+        border-radius: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 340px;
+        height: 600px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0px 7px 20px 0px rgba(0, 0, 0, 0.2);
+        animation-name: modalanimation;
+        animation-duration: 1s;
+
+        .modal-header {
+            height: 321px;
+            width: 100%;
+            padding-top: 40px;
+            background-image: url("../Images/businesscard-header-01.png");
+            background-repeat: no-repeat;
+            background-position: center;
+
+            h3 {
+                text-align: center;
+                margin: 0px auto;
+                font-size: 24px;
+                color: #FFF;
+                font-family: 'Raleway';
+            }
+
+            h4 {
+                text-align: center;
+                margin: 0px auto;
+                font-size: 16px;
+                color: #FFF;
+                font-family: 'Raleway';
+            }
+
+            .modal-header-profile {
+                height: 173px;
+                width: 150px;
+                margin: 20px auto 0px;
+            }
+        }
+
+        .modal-contentarea {
+            width: 100%;
+            height: auto;
+            padding: 30px 40px 0px 40px;
+
+            span {
+                display: block;
+                width: 100px;
+                margin-left: 50px;
+            }
+
+            p {
+                line-height: 1.8;
+                color: #797979;
+                font-family: "Raleway";
+                font-size: 14px;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    
+                a {
+                    text-decoration: none;
+                    color: #2B9D81;
+                }
+            }
+
+            p:last-child {
+                border: none !important;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+
+            .modal-mail::before {
+                content: url('../Images/Icons/modal-mail.png');
+                margin-right: 20px;
+                margin-top: -16px;
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+             
+             .modal-phone::before {
+                content: url('../Images/Icons/modal-phone.png');
+                margin-right: 20px;
+                margin-top: -16px;
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+             
+             .modal-location::before {
+                content: url('../Images/Icons/modal-location.png');
+                margin-right: 20px;
+                margin-top: -16px;
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+        }  
+        
+        .close-modal-button {
+            color: #FFFFFF;
+            right: 20px;
+            top: 15px;
+            position: absolute;
+            font-size: 30px;
+            cursor: pointer;
+        }
+         
+        .close-modal:hover, .close-modal:focus {
+            color: #373737;
+            text-decoration: none;
+        }
+    }
+}
+
+// Animations
+
+@keyframes modalanimation {
+    from {
+       opacity: 0
+    }
+    to {
+       opacity: 1
+    }
+}

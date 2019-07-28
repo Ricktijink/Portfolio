@@ -7,6 +7,7 @@ $(".close-filter-button").click(function() {
    $(".filter-menu").slideToggle("fast");
 });
 
+// Filter options (filtering portfolio items)
 $(".option").click(function() {
    var value = $(this).attr("data-filter");
    if (value == "all") {
@@ -17,7 +18,6 @@ $(".option").click(function() {
       $(".filter").filter("." + value).delay("300").fadeIn("slow");
    }
 });
-
 
 // Add or Remove active class for filter link
 $(".filter-menu li a").click(function() {
@@ -30,6 +30,7 @@ window.onscroll = function() {
    scrollFunction()
 };
 
+// Hide or show gotoTop btn based on scroll position
 function scrollFunction() {
    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
       document.getElementById("myBtn").style.display = "block";
@@ -75,6 +76,8 @@ function outsideModalClose(e) {
    }
 }
 
+
+// Fades in the portfolio items
 $(document).ready(function() {
 
    var duration = 400;
@@ -82,40 +85,10 @@ $(document).ready(function() {
    $('#1,#2,#3,#4,#5,#6,#7,#8,#9,#10').each(function(i) {
       $(this).delay( i*(duration/2) ).animate({opacity:1}, duration);
    });
-
-
-   
-
 });
 
-// Post preview
 
-$(".clicktest").click(function() {
-   $("#post-preview-modal").delay(3000).show();
-});
-
-$(".close-post-preview").click(function() {
-   $("#post-preview-modal").hide();
-});
-
-window.addEventListener('click', outsidePreviewClose);
-var postPreview = document.getElementById('post-preview-modal');
-
-// Function to close modal with outside click
-function outsidePreviewClose(e){
-   if (e.target == postPreview) {
-      postPreview.style.display = 'none';
-   }
-}
-
-// Click post, get ID and show related image
-var postContent = document.getElementById("post-content");
-
-function reply_click(clicked_id) {
-   postContent.innerHTML = '<img src="Images/Projects/project' + clicked_id + '.jpg">';
-}
-
-
+// Open and Close overlay
 var overlay = document.getElementById('overlay');
 var closeMenu = document.getElementById('close-menu');
 

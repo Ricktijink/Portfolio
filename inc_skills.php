@@ -1,5 +1,5 @@
 <!-- Skill -->
-<div class="skill filter frontend" id="1">
+<div class="skill" id="1">
     <div>
         <img src="Images/Icons/html5-icon.png" alt="HTML5 icon">
         <span>HTML5</span>
@@ -9,7 +9,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter frontend" id="2">
+<div class="skill" id="2">
     <div>
         <img src="Images/Icons/css3-icon.png" alt="CSS3 icon">
         <span>CSS3</span>
@@ -19,7 +19,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter frontend" id="3">
+<div class="skill" id="3">
     <div>
         <img src="Images/Icons/sass-icon.png" alt="Sass icon">
         <span>SASS</span>
@@ -29,7 +29,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter backend" id="4">
+<div class="skill" id="4">
     <div>
         <img src="Images/Icons/js-icon.png" alt="JS icon">
         <span>Javascript</span>
@@ -39,7 +39,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter backend" id="5">
+<div class="skill" id="5">
     <div>       
         <img src="Images/Icons/jquery-icon.png" alt="Jquery icon">
         <span>Jquery</span>
@@ -49,7 +49,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter frontend" id="6">
+<div class="skill" id="6">
     <div>
         <img src="Images/Icons/angular-icon.png" alt="Angular icon">
         <span>Angular 6</span>
@@ -59,7 +59,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter frontend" id="7">
+<div class="skill" id="7">
     <div>
         <img src="Images/Icons/react-icon.png" alt="React icon">
         <span>ReactJS</span>
@@ -69,7 +69,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter backend" id="10">
+<div class="skill" id="10">
     <div>
         <img src="Images/Icons/nodejs-icon.png" alt="NodeJS icon">
         <span>NodeJS</span>
@@ -79,7 +79,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter backend" id="11">
+<div class="skill" id="11">
     <div>
         <img src="Images/Icons/php-icon.png" alt="PHP icon">
         <span>PHP</span>
@@ -89,7 +89,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter design" id="12">
+<div class="skill" id="12">
     <div>
         <img src="Images/Icons/photoshop-icon.png" alt="Photoshop icon">
         <span>Photoshop</span>
@@ -99,7 +99,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter backend" id="13">
+<div class="skill" id="13">
     <div>
         <img src="Images/Icons/sql-icon.png" alt="sql icon">
         <span>SQL</span>
@@ -109,7 +109,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter tools" id="14">
+<div class="skill" id="14">
     <div>
         <img src="Images/Icons/git-icon.png" alt="Git icon">
         <span>GIT / Github</span>
@@ -119,7 +119,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter frontend" id="15">
+<div class="skill" id="15">
     <div>
         <img src="Images/Icons/bootstrap-icon.png" alt="Bootstrap icon">
         <span>Bootstrap</span>
@@ -129,7 +129,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter design" id="16">
+<div class="skill" id="16">
     <div>
         <img src="Images/Icons/illustrator-icon.png" alt="Illustrator icon">
         <span>Illustrator</span>
@@ -139,7 +139,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter tools" id="17">
+<div class="skill" id="17">
     <div>
         <img src="Images/Icons/scrum-icon.png" alt="Scrum icon">
         <span>Scrum</span>
@@ -149,7 +149,7 @@
     </div>
 </div>
 <!-- Skill -->
-<div class="skill filter tools" id="18">
+<div class="skill" id="18">
     <div>
         <img src="Images/Icons/kanban-icon.png" alt="Kanban icon">
         <span>Kanban</span>

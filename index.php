@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <!-- Main stylesheet -->
+      <!-- Stylesheet -->
       <link rel="stylesheet" type="text/css" href="Css/style.css">
       <!-- Google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
@@ -14,19 +14,20 @@
 </head>
 
 <body>
-      <!-- Overlay - Navigation -->
+      <!-- Overlay Navigation -->
       <nav id="overlay">
-            <!-- close btn -->
+            <!-- Close overlay BTN -->
             <a href="#" id="close-menu">Close X</a>
-            <!-- Menu links -->
+            <!-- Navigation Links -->
             <div class="overlaymenu">
                   <a href="#" class="menu-link active-page" id="menuItem1">PORTFOLIO</a>
                   <a href="skills.php" class="menu-link" id="menuItem2">SKILLS</a>
                   <a href="cv.html" class="menu-link" id="menuItem3">MIJN CV</a>
             </div>
       </nav>
+      <!-- Mobile Navigation BTN -->
       <a href="#" id="open-menu-mobile" class="mobile-menu"><img src="Images/Icons/menu.png"></a>
-      <!-- Modal - Businesscard -->
+      <!-- Businesscard Modal -->
       <div id="businesscard-modal" class="modal">
             <div class="modal-content">
                   <div class="modal-header">
@@ -45,15 +46,6 @@
                         <p class="modal-location">Nederland, Tilburg</p>
                   </div>
                   <span class="close-modal-button" id="close-modal">&times;</span>
-            </div>
-      </div>
-      <!-- Modal - postpreview -->
-      <div id="post-preview-modal" class="postpreview">
-            <div class="post-preview">
-                  <span id="post-content">
-                        <!-- Content gets dynamically loaded -->
-                  </span>
-                  <span class="close-post-preview">&times;</span>
             </div>
       </div>
       <!-- Container -->
@@ -92,9 +84,9 @@
                               <div class="soc-icon" id="soc-3">
                                     <a href="mailto:ricktijink@hotmail.com"><img src="Images/Icons/mail.png" alt="Email icon"></a>
                               </div>
-                              <!-- CV -->
+                              <!-- BusinessCard -->
                               <div class="soc-icon" id="open-modal">
-                                    <a href="#"><img src="Images/Icons/about.png" alt="CV icon"></a>
+                                    <a href="#"><img src="Images/Icons/about.png" alt="Business card icon"></a>
                               </div>
                         </div>
                         <!-- Copyright -->
@@ -104,18 +96,18 @@
                         </div>
                   </div>
             </div>
-            <!-- Content area -->
+            <!-- Main Content -->
             <div class="page-content">
-                  <!-- Content topbar -->
+                  <!-- Topbar -->
                   <div class="content-topbar">
-                        <!-- topbar title -->
                         <div class="topbar-title">Portfolio</div>
+                        <!-- Topbar buttons -->
                         <div class="menu-buttons">
                               <a href="#" id="open-menu"><img src="Images/Icons/menu.png"></a>
                               <a href="#" id="filter-menu-button"><img src="Images/Icons/filter.png"></a>
                         </div>
                   </div>
-                  <!-- Masonry for items -->
+                  <!-- Masonry for portfolio items -->
                   <div class="content-masonry">
                         <!-- Filter -->
                         <div class="filter-menu">
@@ -132,12 +124,12 @@
                                     <li class="clearfix"></li>
                               </ul>
                         </div>
-                        <!-- Projects -->
+                        <!-- Projects (portfolio items) Include for readability -->
                         <main>
                               <?php include 'inc_projects.php';?>
                               <div class="clearfix"></div>
                         </main>
-                        <!-- Go to top btn -->
+                        <!-- Go to top BTN -->
                         <a href="#"><img src="Images/Icons/up.png" onclick="topFunction()" id="myBtn" alt="Go top"></a>
                   </div>
             </div>

@@ -1,0 +1,70 @@
+.content-topbar {
+    width: calc(100% - 320px);
+    height: 90px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid #ececec;
+    opacity: 0;
+    animation: topbarFadeIn 1s forwards 0.5s ease;
+
+    .topbar-title {
+        font-size: 36px;
+        font-family: "Raleway";
+        padding: 24px 0px 0px 30px;
+        box-sizing: border-box;
+        width: 250px;
+        float: left;
+    }
+
+    .menu-buttons{
+        width: 100px;
+        height: 44px;
+        float: right;
+        margin: 23px;
+
+        a {
+            width: 44px;
+            height: 44px;
+            margin: 0px;
+            float: right;
+            cursor: pointer;
+            animation: topbarButtonPulse 1s infinite 0s ease;
+        }
+    }
+}
+
+.mobile-menu{
+    position: fixed;
+    z-index: 30;
+    top: 30px;
+    right: 30px;
+    display: none;
+    animation: topbarButtonPulse 1s infinite 0s ease;
+}
+
+//  Animations
+ 
+@keyframes topbarFadeIn{
+     0%{
+         transform: translateY(-100px);
+         opacity: 0;
+    }
+     100%{
+         transform: translateY(0);
+         opacity: 1;
+    }
+}
+
+@keyframes topbarButtonPulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

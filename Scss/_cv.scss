@@ -1,0 +1,386 @@
+.cv {
+    width: 70%;
+    height: auto;
+    margin: 0px auto 0px;
+    padding: 30px 0px;
+ }
+ 
+ .cv-left {
+    float: left;
+    margin-right: 2%;
+    width: 40%;
+}
+ 
+.cv-right {
+    float: left;
+    width: 58%;
+}
+
+// Block Styling
+
+.cv-block {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0px 7px 30px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 30px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 30px -16px rgba(0,0,0,0.75);
+
+    h1 {
+        font-size: 50px;
+        font-family: "Montserrat";
+        color: #535762;
+    }
+
+    h2 {
+        font-size: 26px;
+        font-family: "Raleway";
+        color: #cecece;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-family: "Montserrat";
+        font-weight: bold;
+        color: #535762;
+        margin-bottom: 30px;
+    }
+}
+  
+// CV - About Me
+ 
+.me {
+    height: auto;
+    margin-bottom: 20px;
+
+    p {
+        line-height: 1.8;
+        color: #797979;
+        font-family: "Raleway";
+        font-size: 14px;
+    }
+
+    &::before {
+        content: url('../Images/Icons/cv-about.png');
+        margin-right: 10px;
+        margin-top: -4px;
+        width: 30px;
+        height: 30px;
+        float: left;
+    }
+}
+ 
+// CV - Personal info
+ 
+.personaldata{
+    margin-bottom: 20px;
+
+    &::before {
+        content: url('../Images/Icons/cv-about.png');
+        margin-right: 10px;
+        margin-top: -4px;
+        width: 30px;
+        height: 30px;
+        float: left;
+    }
+
+    a {
+        color: #2C9E82;
+        text-decoration: none;
+    }
+
+    p {
+        line-height: 1.8;
+        color: #797979;
+        font-family: "Raleway";
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+
+        span {
+            display: block;
+            float: left;
+            width: 100px;
+            margin-right: 20px;
+        }
+    }
+
+    p:last-child {
+        border: none !important;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+// CV - Work Experience
+ 
+.workexperience {
+    min-height: 300px;
+    margin-bottom: 20px;
+
+    &::before {
+        content: url('../Images/Icons/cv-work.png');
+        margin-right: 10px;
+        margin-top: -4px;
+        width: 30px;
+        height: 30px;
+        float: left;
+    }
+}
+ 
+.work {
+    width: 97%;
+    margin-left: 3%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+
+    &:last-child {
+        border: none;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .work-title {
+        width: 100%;
+        height: auto;
+        line-height: 1.8;
+        color: #797979;
+        font-family: "Raleway";
+        font-size: 16px;
+    
+        span {
+            font-weight: bold;
+        }
+    }
+     
+    .work-period {
+        width: 100%;
+        height: auto;
+        line-height: 1.8;
+        color: #2C9E82;
+        font-family: "Raleway";
+        font-size: 14px;
+    }
+     
+    .work-description {
+        width: 100%;
+        height: auto;
+        line-height: 1.8;
+        color: #797979;
+        font-family: "Raleway";
+        font-size: 12px;
+    }
+}
+ 
+.paragraph-style{
+    width: 100%;
+    height: auto;
+    line-height: 1.8;
+    color: #797979;
+    font-family: "Raleway";
+    font-size: 12px;
+}
+ 
+ /* CV - certificaten */
+ 
+.certificaten{
+    height: auto;
+}
+ 
+.certificaten::before {
+    content: url('../Images/Icons/cv-certificaat.png');
+    margin-right: 10px;
+    margin-top: -4px;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+ 
+.certificaten a {
+    color: #2C9E82;
+    text-decoration: none;
+}
+ 
+.certificaten p {
+    line-height: 1.8;
+    color: #797979;
+    font-family: "Raleway";
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+ 
+.certificaten p:last-child {
+    border: none !important;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+ 
+.certificaten p span {
+    display: block;
+    margin-right: 20px;
+}
+ 
+ /* Tooltip container */
+ 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+ 
+.tooltip img {
+    width: 100%;
+    height: auto;
+}
+ 
+/* Tooltip text */
+ 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #2C9E82;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -150px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+}
+ 
+.tooltiptext h4 {
+    font-family: "Raleway";
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+ 
+.tooltip p {
+    line-height: 1.8;
+    font-family: "Raleway";
+    font-size: 11px;
+ }
+ 
+ /* Tooltip arrow */
+ 
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #2C9E82 transparent transparent transparent;
+}
+ 
+/* Show the tooltip text when you mouse over the tooltip container */
+ 
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+ 
+.cursus {
+    margin-bottom: 20px;
+}
+ 
+.cursus::before {
+    content: url('../Images/Icons/cv-study.png');
+    margin-right: 10px;
+    margin-top: -4px;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+ 
+.education {
+    min-height: 300px;
+    margin-bottom: 20px;
+}
+ 
+.education::before {
+    content: url('../Images/Icons/cv-study.png');
+    margin-right: 10px;
+    margin-top: -4px;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+ 
+.study {
+    width: 97%;
+    margin-left: 3%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+ 
+.study:last-child {
+    border: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+ 
+.study-title {
+    width: 100%;
+    height: auto;
+    line-height: 1.8;
+    color: #797979;
+    font-family: "Raleway";
+    font-size: 16px;
+}
+ 
+.study-title span {
+    font-weight: bold;
+}
+ 
+.study-period {
+    width: 100%;
+    height: auto;
+    line-height: 1.8;
+    color: #2C9E82;
+    font-family: "Raleway";
+    font-size: 14px;
+}
+ 
+.study-status {
+    width: 100%;
+    height: auto;
+    line-height: 1.8;
+    color: #797979;
+    font-family: "Raleway";
+    font-size: 12px;
+}
+ 
+.skills::before {
+    content: url('../Images/Icons/cv-about.png');
+    margin-right: 10px;
+    margin-top: -4px;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+ 
+ 

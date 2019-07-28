@@ -1,0 +1,99 @@
+nav{
+    position: fixed;
+    background-color: #2B9D81;
+    padding: 40px!important;
+    width: 100%;
+    height: 100vh;
+    z-index: 40;
+    display: none;
+    transform: scaleX(0);
+    transform-origin: right;
+
+    #close-menu{
+        float: right;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: "Montserrat";
+    }
+
+    .overlaymenu{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .menu-link{
+            font-weight: bold;
+            font-size: 3em;
+            margin: 50px auto;
+            display: block;
+            text-align: center;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: "Montserrat";
+            -webkit-transition: all 0.2s;
+           -moz-transition: all 0.2s;
+             -o-transition: all 0.2s;
+                transition: all 0.2s;
+        }
+        
+        .menu-link:hover{
+           -webkit-transition: all 0.2s;
+           -moz-transition: all 0.2s;
+             -o-transition: all 0.2s;
+                transition: all 0.2s;
+                font-size: 4em;
+        }
+        
+        .active-page {
+            text-decoration: line-through;
+            cursor: auto;
+        }
+
+        #menuItem1{
+            opacity: 0;
+            animation: menuItemFadeIn 1s forwards 0.35s ease;
+        }
+         
+        #menuItem2{
+            opacity: 0;
+            animation: menuItemFadeIn 1s forwards 0.55s ease;
+        }
+         
+        #menuItem3{
+            opacity: 0;
+            animation: menuItemFadeIn 1s forwards 0.75s ease;
+        }
+    }
+}
+
+
+.show-menu{
+    display: block;
+    animation: slideMenuIn 0.2s ease-in forwards;
+}
+
+// Animations
+
+@keyframes slideMenuIn{
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes menuItemFadeIn{
+    0%{
+        transform: translateX(-30px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        }
+}

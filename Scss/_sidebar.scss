@@ -1,0 +1,148 @@
+.page-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    background-color: #fff;
+    z-index: 10;
+    border-right: 1px solid #ececec;
+    animation: sidebarFadeIn 1s forwards 0s ease;
+
+    // Sidebar Logo
+
+    .sidebar-logo {
+        width: 100%;
+        height: auto;
+        margin: 50px auto 70px auto;
+
+        .logo-icon {
+            width: 94px;
+            height: 94px;
+            margin: 0px auto;
+        }
+
+        .logo-text {
+            width: 100%;
+            margin: 10px auto;
+            height: auto;
+            font-size: 24px;
+            font-family: "Montserrat";
+            text-align: center;
+
+            span {
+                font-size: 16px;
+                color: #cecece;
+                font-family: "Raleway";
+                display: block;
+            }
+        }
+    }
+
+    //  Sidebar Content
+
+    .sidebar-content {
+        width: 76%;
+        height: auto;
+        margin: 0px auto 0px auto;
+        opacity: 0;
+        animation: sideBarContentFadeIn 1s forwards 0.55s ease;
+
+        p {
+            text-align: center;
+            line-height: 1.8;
+            color: #797979;
+            font-family: "Raleway";
+            font-size: 14px;
+        }
+    }
+
+    // Sidebar Footer
+
+    .sidebar-footer {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .footer-social {
+            width: 224px;
+            height: 45px;
+            margin: 0px auto;
+
+            .soc-icon {
+                width: 44px;
+                height: 44px;
+                float: left;
+                margin: 0px 6px;
+            }
+
+            #soc-1{
+                opacity: 0;
+                animation: socIconFadeIn 1s forwards 0.55s ease;
+            }
+             
+            #soc-2{
+                opacity: 0;
+                animation: socIconFadeIn 1s forwards 0.75s ease;
+            } 
+             
+            #soc-3{
+                opacity: 0;
+                animation: socIconFadeIn 1s forwards 0.95s ease;
+            }
+
+            #open-modal{
+                opacity: 0;
+                animation: socIconFadeIn 1s forwards 1.15s ease;
+            }
+        }
+
+        .footer-copy {
+            width: 100%;
+            padding: 20px 0px;
+            text-align: center;
+            font-family: "Raleway";
+            color: #8d8d8d;
+            font-size: 14px;
+
+            span {
+                font-weight: 800;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//  Animations
+
+@keyframes sidebarFadeIn{
+    0%{
+        transform: translateX(-320px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes sideBarContentFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes socIconFadeIn{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

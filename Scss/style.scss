@@ -1,0 +1,118 @@
+// Imports 
+@import 'overlayMenu';
+@import 'sidebar';
+@import 'topbar';
+@import 'filterMenu';
+@import 'portfolioItem';
+@import 'modal';
+@import 'cv';
+@import 'mediaQueries';
+
+// Reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #FAFAFA;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* General Page Styling */
+
+.page-content {
+    width: 100%;
+    padding-left: 320px;
+}
+
+main {
+    width: 96%;
+    margin: 0px auto 0px;
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: ContentfadeIn 2s forwards 0s ease;
+    opacity: 0;
+    top: 100%;
+    
+    a[title] {
+        text-decoration: none;
+        color: #424242;
+        display: inline-block;
+    }
+}
+
+.content-masonry {
+    padding-top: 90px;
+}
+
+ /* Go to top button */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+    animation: goTopButtonPulse 1s infinite 0s ease;
+ }
+
+// Skills Meter
+
+ .meter {
+    height: 10px;
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+    background: #e4e4e4;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+
+    span {
+        display: block;
+        height: 100%;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        background-color: #2C9E82;
+        position: relative;
+        overflow: hidden;
+        color:#FFF!important;
+    }
+}
+
+// Animations
+
+@keyframes ContentfadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes goTopButtonPulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
